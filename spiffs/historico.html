@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico - Sistema de Monitoreo de Crecidas</title>
+    <!-- Importamos los estilos CSS -->
+    <link rel="stylesheet" href="CSS/esilos.css">
+    <!-- Fontawesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Flatpickr para selector de fechas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Nuestro script de JavaScript para histórico -->
+    <script src="JS/historico.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>MonitorEarly</h2>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="historico.html">
+                    <i class="fas fa-history"></i>
+                    <span>Histórico</span>
+                </a>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Alcaldía Municipal</p>
+            <p>Sistema de Alarma Temprana</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <header>
+            <button id="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1>Histórico de Datos</h1>
+            <div class="user-info">
+                <span>Operador</span>
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </header>
+
+        <div class="dashboard">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Filtros</h2>
+                </div>
+                <div class="filter-container">
+                    <div class="filter-group">
+                        <label for="date-range">Rango de Fechas:</label>
+                        <input type="text" id="date-range" placeholder="Seleccionar rango...">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="estado-filter">Estado:</label>
+                        <select id="estado-filter">
+                            <option value="all">Todos</option>
+                            <option value="NORMAL">Normal</option>
+                            <option value="CAUTION">Precaución</option>
+                            <option value="WARNING">Advertencia</option>
+                            <option value="CRITICAL">Crítico</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="entries-count">Mostrar:</label>
+                        <select id="entries-count">
+                            <option value="20">20 registros</option>
+                            <option value="50">50 registros</option>
+                            <option value="100">100 registros</option>
+                        </select>
+                    </div>
+                    
+                    <button id="apply-filters" class="primary-btn">
+                        <i class="fas fa-filter"></i> Aplicar Filtros
+                    </button>
+                    
+                    <button id="export-csv" class="secondary-btn">
+                        <i class="fas fa-file-export"></i> Exportar CSV
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Registros Históricos</h2>
+                    <div class="pagination">
+                        <button id="prev-page" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <span id="page-info">Página 1 de 1</span>
+                        <button id="next-page" disabled>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="historial-completo">
+                        <thead>
+                            <tr>
+                                <th>Fecha y Hora <i class="fas fa-sort"></i></th>
+                                <th>Distancia (cm) <i class="fas fa-sort"></i></th>
+                                <th>Temperatura (°C) <i class="fas fa-sort"></i></th>
+                                <th>Humedad (%) <i class="fas fa-sort"></i></th>
+                                <th>Estado <i class="fas fa-sort"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aquí se agregarán las filas dinámicamente -->
+                            <tr>
+                                <td colspan="5" class="loading-message">Cargando datos...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Estadísticas</h2>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>Promedio de Distancia</h3>
+                        <p id="avg-distance">--</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Temperatura Máxima</h3>
+                        <p id="max-temp">--</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Temperatura Mínima</h3>
+                        <p id="min-temp">--</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Alertas Críticas</h3>
+                        <p id="critical-count">--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Sistema de Monitoreo de Crecidas - Universidad de La Sabana</p>
+        </footer>
+    </div>
+</body>
+</html>
