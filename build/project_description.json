@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "challenge_2",
-    "project_version":    "1",
+    "project_version":    "b23becc-dirty",
     "project_path":       "/home/gvln-s/documents/universidad/iot/challenge_2",
     "idf_path":           "/home/gvln-s/esp/esp-idf",
     "build_dir":          "/home/gvln-s/documents/universidad/iot/challenge_2/build",
