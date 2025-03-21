@@ -1,0 +1,583 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090bad: __assert_func at /home/gvln-s/esp/esp-idf/components/newlib/assert.c:81
+0x4011d126: tcpip_send_msg_wait_sem at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c:449 (discriminator 1)
+0x4012d83d: netconn_apimsg at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x4012d8ce: netconn_new_with_proto_and_callback at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x4011c909: lwip_socket at /home/gvln-s/esp/esp-idf/components/lwip/lwip/src/api/sockets.c:1720 (discriminator 4)
+0x400e1fdf: socket at /home/gvln-s/esp/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:350
+0x400e2628: httpd_start at /home/gvln-s/esp/esp-idf/components/esp_http_server/src/httpd_main.c:517
+0x400d6880: start_webserver at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:76
+0x400d6a06: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015d04b: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

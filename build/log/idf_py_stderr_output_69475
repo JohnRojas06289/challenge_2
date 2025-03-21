@@ -1,0 +1,200 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+[0m
+[0;33m--- 0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x4008181e: panic_abort at /home/gvln-s/esp/esp-idf/components/esp_system/panic.c:466
+0x40089525: esp_system_abort at /home/gvln-s/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40090a71: abort at /home/gvln-s/esp/esp-idf/components/newlib/abort.c:38
+0x4008951b: _esp_error_check_failed at /home/gvln-s/esp/esp-idf/components/esp_system/esp_err.c:50
+0x400d6932: wifi_init_sta at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:88 (discriminator 1)
+0x400d69f6: app_main at /home/gvln-s/documents/universidad/iot/challenge_2/main/challenge_2.c:106
+0x4015cfc3: main_task at /home/gvln-s/esp/esp-idf/components/freertos/app_startup.c:208
+0x4008a071: vPortTaskWrapper at /home/gvln-s/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m

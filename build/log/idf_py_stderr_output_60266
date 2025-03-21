@@ -1,0 +1,10 @@
+CMake Error at /home/gvln-s/esp/esp-idf/tools/cmake/component.cmake:317 (message):
+  Include directory
+  '/home/gvln-s/documents/universidad/iot/challenge_2/main/main' is not a
+  directory.
+Call Stack (most recent call first):
+  /home/gvln-s/esp/esp-idf/tools/cmake/component.cmake:485 (__component_add_include_dirs)
+  main/CMakeLists.txt:1 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

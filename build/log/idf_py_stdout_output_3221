@@ -1,0 +1,379 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2025 17:27:38[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot:  3 storage          Unknown data     01 82 00110000 00080000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1b4cch (111820) map[0m
+[0;32mI (150) esp_image: segment 1: paddr=0002b4f4 vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0002f1fc vaddr=40080000 size=00e1ch (  3612) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=90ad4h (592596) map[0m
+[0;32mI (367) esp_image: segment 4: paddr=000c0afc vaddr=40080e1c size=16034h ( 90164) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     challenge_2[0m
+[0;32mI (444) cpu_start: App version:      1[0m
+[0;32mI (448) cpu_start: Compile time:     Mar 20 2025 17:27:21[0m
+[0;32mI (454) cpu_start: ELF file SHA256:  adf4531df...[0m
+[0;32mI (459) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (464) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (469) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (474) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (479) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (486) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB7E58 len 000281A8 (160 KiB): DRAM[0m
+[0;32mI (498) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (504) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (511) heap_init: At 40096E50 len 000091B0 (36 KiB): IRAM[0m
+[0;32mI (519) spi_flash: detected chip: generic[0m
+[0;32mI (522) spi_flash: flash io: dio[0m
+[0;33mW (526) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (540) main_task: Started on CPU0[0m
+[0;32mI (550) main_task: Calling app_main()[0m
+[0;32mI (580) challenge_2: Tamaño de la partición: total: 474641, usado: 502[0m
+[0;32mI (620) wifi:wifi driver task: 3ffc078c, prio:23, stack:6656, core=0[0m
+[0;32mI (630) wifi:wifi firmware version: 01d22db[0m
+[0;32mI (630) wifi:wifi certification version: v7.0[0m
+[0;32mI (630) wifi:config NVS flash: enabled[0m
+[0;32mI (630) wifi:config nano formating: disabled[0m
+[0;32mI (630) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (640) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (640) wifi:Init management short buffer num: 32[0m
+[0;32mI (650) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (650) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (650) wifi:Init static rx buffer num: 10[0m
+[0;32mI (660) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (660) wifi_init: rx ba win: 6[0m
+[0;32mI (670) wifi_init: tcpip mbox: 32[0m
+[0;32mI (670) wifi_init: udp mbox: 6[0m
+[0;32mI (670) wifi_init: tcp mbox: 6[0m
+[0;32mI (680) wifi_init: tcp tx win: 5760[0m
+[0;32mI (680) wifi_init: tcp rx win: 5760[0m
+[0;32mI (690) wifi_init: tcp mss: 1440[0m
+[0;32mI (690) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (690) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (740) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (830) wifi:mode : sta (5c:01:3b:65:b7:6c)[0m
+[0;32mI (830) wifi:enable tsf[0m
+[0;32mI (830) challenge_2: Conectando a Santiago’s iPhone...[0m
+[0;32mI (1710) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1720) wifi:state: init -> auth (b0)[0m
+[0;32mI (1720) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1730) wifi:state: assoc -> run (10)[0m
+[0;32mI (1760) wifi:state: run -> init (2c0)[0m
+[0;32mI (1770) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (1770) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (4180) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (4210) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (4210) wifi:state: init -> auth (b0)[0m
+[0;32mI (4230) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4240) wifi:state: assoc -> run (10)[0m
+[0;32mI (4260) wifi:state: run -> init (2c0)[0m
+[0;32mI (4270) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (4270) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (6690) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (6710) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (6710) wifi:state: init -> auth (b0)[0m
+[0;32mI (6720) wifi:state: auth -> assoc (0)[0m
+[0;32mI (6730) wifi:state: assoc -> run (10)[0m
+[0;32mI (6760) wifi:state: run -> init (2c0)[0m
+[0;32mI (6770) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (6770) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (9180) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (9190) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (9190) wifi:state: init -> auth (b0)[0m
+[0;32mI (9210) wifi:state: auth -> assoc (0)[0m
+[0;32mI (9210) wifi:state: assoc -> run (10)[0m
+[0;32mI (9240) wifi:state: run -> init (2c0)[0m
+[0;32mI (9250) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (9250) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (11660) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (11680) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (11680) wifi:state: init -> auth (b0)[0m
+[0;32mI (11720) wifi:state: auth -> assoc (0)[0m
+[0;32mI (11730) wifi:state: assoc -> run (10)[0m
+[0;32mI (11760) wifi:state: run -> init (2c0)[0m
+[0;32mI (11770) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (11770) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (14180) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (14200) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (14200) wifi:state: init -> auth (b0)[0m
+[0;32mI (14220) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14230) wifi:state: assoc -> run (10)[0m
+[0;32mI (14250) wifi:state: run -> init (2c0)[0m
+[0;32mI (14260) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (14260) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (16680) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (16700) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (16700) wifi:state: init -> auth (b0)[0m
+[0;32mI (16710) wifi:state: auth -> assoc (0)[0m
+[0;32mI (16720) wifi:state: assoc -> run (10)[0m
+[0;32mI (16780) wifi:state: run -> init (2c0)[0m
+[0;32mI (16790) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (16790) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (19200) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (19210) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (19220) wifi:state: init -> auth (b0)[0m
+[0;32mI (19240) wifi:state: auth -> assoc (0)[0m
+[0;32mI (19250) wifi:state: assoc -> run (10)[0m
+[0;32mI (19290) wifi:state: run -> init (2c0)[0m
+[0;32mI (19300) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (19300) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (21710) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (21740) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (21740) wifi:state: init -> auth (b0)[0m
+[0;32mI (21770) wifi:state: auth -> assoc (0)[0m
+[0;32mI (21780) wifi:state: assoc -> run (10)[0m
+[0;32mI (21860) wifi:state: run -> init (2c0)[0m
+[0;32mI (21870) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (21870) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (24280) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (24350) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (24350) wifi:state: init -> auth (b0)[0m
+[0;32mI (24360) wifi:state: auth -> assoc (0)[0m
+[0;32mI (24380) wifi:state: assoc -> run (10)[0m
+[0;32mI (24470) wifi:state: run -> init (2c0)[0m
+[0;32mI (24490) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (24490) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (26900) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (26920) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (26920) wifi:state: init -> auth (b0)[0m
+[0;32mI (26960) wifi:state: auth -> assoc (0)[0m
+[0;32mI (26970) wifi:state: assoc -> run (10)[0m
+[0;32mI (26990) wifi:state: run -> init (2c0)[0m
+[0;32mI (27000) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (27000) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (29410) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (29430) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (29430) wifi:state: init -> auth (b0)[0m
+[0;32mI (29440) wifi:state: auth -> assoc (0)[0m
+[0;32mI (29450) wifi:state: assoc -> run (10)[0m
+[0;32mI (29540) wifi:state: run -> init (2c0)[0m
+[0;32mI (29550) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (29550) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (31960) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (31980) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (31990) wifi:state: init -> auth (b0)[0m
+[0;32mI (32010) wifi:state: auth -> assoc (0)[0m
+[0;32mI (32060) wifi:state: assoc -> run (10)[0m
+[0;32mI (32090) wifi:state: run -> init (2c0)[0m
+[0;32mI (32100) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (32100) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (34510) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (34520) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (34520) wifi:state: init -> auth (b0)[0m
+[0;32mI (34540) wifi:state: auth -> assoc (0)[0m
+[0;32mI (34560) wifi:state: assoc -> run (10)[0m
+[0;32mI (34590) wifi:state: run -> init (2c0)[0m
+[0;32mI (34600) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (34600) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (37010) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (37020) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (37030) wifi:state: init -> auth (b0)[0m
+[0;32mI (37060) wifi:state: auth -> assoc (0)[0m
+[0;32mI (37060) wifi:state: assoc -> run (10)[0m
+[0;32mI (37090) wifi:state: run -> init (2c0)[0m
+[0;32mI (37100) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (37100) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (39510) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (39560) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (39560) wifi:state: init -> auth (b0)[0m
+[0;32mI (39570) wifi:state: auth -> assoc (0)[0m
+[0;32mI (39580) wifi:state: assoc -> run (10)[0m
+[0;32mI (39610) wifi:state: run -> init (2c0)[0m
+[0;32mI (39620) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (39620) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (42030) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (42050) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (42050) wifi:state: init -> auth (b0)[0m
+[0;32mI (42060) wifi:state: auth -> assoc (0)[0m
+[0;32mI (42070) wifi:state: assoc -> run (10)[0m
+[0;32mI (42120) wifi:state: run -> init (2c0)[0m
+[0;32mI (42130) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (42130) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (44540) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (44570) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (44570) wifi:state: init -> auth (b0)[0m
+[0;32mI (44580) wifi:state: auth -> assoc (0)[0m
+[0;32mI (44590) wifi:state: assoc -> run (10)[0m
+[0;32mI (44620) wifi:state: run -> init (2c0)[0m
+[0;32mI (44630) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (44630) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (47040) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (47050) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (47060) wifi:state: init -> auth (b0)[0m
+[0;32mI (47090) wifi:state: auth -> assoc (0)[0m
+[0;32mI (47100) wifi:state: assoc -> run (10)[0m
+[0;32mI (47170) wifi:state: run -> init (2c0)[0m
+[0;32mI (47180) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (47180) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (49590) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (49620) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (49620) wifi:state: init -> auth (b0)[0m
+[0;32mI (49650) wifi:state: auth -> assoc (0)[0m
+[0;32mI (49660) wifi:state: assoc -> run (10)[0m
+[0;32mI (49680) wifi:state: run -> init (2c0)[0m
+[0;32mI (49690) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (49690) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (52100) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (52120) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (52120) wifi:state: init -> auth (b0)[0m
+[0;32mI (52150) wifi:state: auth -> assoc (0)[0m
+[0;32mI (52160) wifi:state: assoc -> run (10)[0m
+[0;32mI (52270) wifi:state: run -> init (2c0)[0m
+[0;32mI (52280) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (52280) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (54700) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (54730) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (54730) wifi:state: init -> auth (b0)[0m
+[0;32mI (54750) wifi:state: auth -> assoc (0)[0m
+[0;32mI (54760) wifi:state: assoc -> run (10)[0m
+[0;32mI (54800) wifi:state: run -> init (2c0)[0m
+[0;32mI (54810) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (54810) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (57220) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (57320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (57320) wifi:state: init -> auth (b0)[0m
+[0;32mI (57330) wifi:state: auth -> assoc (0)[0m
+[0;32mI (57340) wifi:state: assoc -> run (10)[0m
+[0;32mI (57390) wifi:state: run -> init (2c0)[0m
+[0;32mI (57400) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (57400) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (59810) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (62230) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (62260) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (62260) wifi:state: init -> auth (b0)[0m
+[0;32mI (62270) wifi:state: auth -> assoc (0)[0m
+[0;32mI (62290) wifi:state: assoc -> run (10)[0m
+[0;32mI (62310) wifi:state: run -> init (2c0)[0m
+[0;32mI (62330) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (62330) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (64740) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (64750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (64760) wifi:state: init -> auth (b0)[0m
+[0;32mI (64770) wifi:state: auth -> assoc (0)[0m
+[0;32mI (64780) wifi:state: assoc -> run (10)[0m
+[0;32mI (64800) wifi:state: run -> init (2c0)[0m
+[0;32mI (64820) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (64820) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (67230) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (67240) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (67240) wifi:state: init -> auth (b0)[0m
+[0;32mI (67260) wifi:state: auth -> assoc (0)[0m
+[0;32mI (67270) wifi:state: assoc -> run (10)[0m
+[0;32mI (67310) wifi:state: run -> init (2c0)[0m
+[0;32mI (67330) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (67330) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (69740) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (69750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (69750) wifi:state: init -> auth (b0)[0m
+[0;32mI (69770) wifi:state: auth -> assoc (0)[0m
+[0;32mI (69780) wifi:state: assoc -> run (10)[0m
+[0;32mI (69810) wifi:state: run -> init (2c0)[0m
+[0;32mI (69820) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (69820) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (72230) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (72250) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (72250) wifi:state: init -> auth (b0)[0m
+[0;32mI (72270) wifi:state: auth -> assoc (0)[0m
+[0;32mI (72280) wifi:state: assoc -> run (10)[0m
+[0;32mI (72310) wifi:state: run -> init (2c0)[0m
+[0;32mI (72320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (72320) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (74730) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (74750) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (74750) wifi:state: init -> auth (b0)[0m
+[0;32mI (74760) wifi:state: auth -> assoc (0)[0m
+[0;32mI (74780) wifi:state: assoc -> run (10)[0m
+[0;32mI (74800) wifi:state: run -> init (2c0)[0m
+[0;32mI (74810) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (74810) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (77220) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (77230) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (77230) wifi:state: init -> auth (b0)[0m
+[0;32mI (77250) wifi:state: auth -> assoc (0)[0m
+[0;32mI (77270) wifi:state: assoc -> run (10)[0m
+[0;32mI (77290) wifi:state: run -> init (2c0)[0m
+[0;32mI (77310) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (77310) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (79720) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (79740) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (79740) wifi:state: init -> auth (b0)[0m
+[0;32mI (79760) wifi:state: auth -> assoc (0)[0m
+[0;32mI (79770) wifi:state: assoc -> run (10)[0m
+[0;32mI (79820) wifi:state: run -> init (2c0)[0m
+[0;32mI (79830) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (79830) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (82240) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (82250) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (82260) wifi:state: init -> auth (b0)[0m
+[0;32mI (82270) wifi:state: auth -> assoc (0)[0m
+[0;32mI (82290) wifi:state: assoc -> run (10)[0m
+[0;32mI (82330) wifi:state: run -> init (2c0)[0m
+[0;32mI (82340) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (82340) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (84750) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (84760) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (84760) wifi:state: init -> auth (b0)[0m
+[0;32mI (84790) wifi:state: auth -> assoc (0)[0m
+[0;32mI (84790) wifi:state: assoc -> run (10)[0m
+[0;32mI (84820) wifi:state: run -> init (2c0)[0m
+[0;32mI (84830) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (84830) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (87240) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (87250) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (87260) wifi:state: init -> auth (b0)[0m
+[0;32mI (87270) wifi:state: auth -> assoc (0)[0m
+[0;32mI (87280) wifi:state: assoc -> run (10)[0m
+[0;32mI (87310) wifi:state: run -> init (2c0)[0m
+[0;32mI (87320) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (87320) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (89730) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (89790) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (89790) wifi:state: init -> auth (b0)[0m
+[0;32mI (89800) wifi:state: auth -> assoc (0)[0m
+[0;32mI (89810) wifi:state: assoc -> run (10)[0m
+[0;32mI (89840) wifi:state: run -> init (2c0)[0m
+[0;32mI (89860) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (89860) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (92270) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (92290) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (92290) wifi:state: init -> auth (b0)[0m
+[0;32mI (92300) wifi:state: auth -> assoc (0)[0m
+[0;32mI (92320) wifi:state: assoc -> run (10)[0m
+[0;32mI (92340) wifi:state: run -> init (2c0)[0m
+[0;32mI (92350) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (92350) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (94760) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (94770) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (94780) wifi:state: init -> auth (b0)[0m
+[0;32mI (94800) wifi:state: auth -> assoc (0)[0m
+[0;32mI (94800) wifi:state: assoc -> run (10)[0m
+[0;32mI (94830) wifi:state: run -> init (2c0)[0m
+[0;32mI (94840) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (94840) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
