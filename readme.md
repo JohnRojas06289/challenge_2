@@ -1,0 +1,1 @@
+redireccionamiento a nuestra WIKI: https://github.com/JohnRojas06289/challenge_2/wiki
