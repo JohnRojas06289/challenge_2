@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/gvln-s/esp/esp-idf/components/bootloader/subproject
+source_dir=C:/Users/jhonr/esp/v5.4/esp-idf/components/bootloader/subproject
 work_dir=
 

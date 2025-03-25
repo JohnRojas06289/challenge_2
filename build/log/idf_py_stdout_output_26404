@@ -1,0 +1,90 @@
+[1/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jhonr\proyecto-monitoreo-crecidas\build\esp-idf\main && C:\Users\jhonr\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/jhonr/esp/v5.4/esp-idf/components/spiffs/spiffsgen.py 0x80000 C:/Users/jhonr/proyecto-monitoreo-crecidas/spiffs C:/Users/jhonr/proyecto-monitoreo-crecidas/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jhonr\proyecto-monitoreo-crecidas\build\bootloader\esp-idf\esptool_py && C:\Users\jhonr\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/jhonr/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/jhonr/proyecto-monitoreo-crecidas/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[3/11] No install step for 'bootloader'
+[4/11] Completed 'bootloader'
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/challenge_2.c.obj
+[6/11] Linking C static library esp-idf\main\libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Linking CXX executable challenge_2.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/jhonr/proyecto-monitoreo-crecidas/build/challenge_2.bin
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jhonr\proyecto-monitoreo-crecidas\build\esp-idf\esptool_py && C:\Users\jhonr\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/jhonr/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/jhonr/proyecto-monitoreo-crecidas/build/partition_table/partition-table.bin C:/Users/jhonr/proyecto-monitoreo-crecidas/build/challenge_2.bin"
+challenge_2.bin binary size 0xceee0 bytes. Smallest app partition is 0x100000 bytes. 0x31120 bytes (19%) free.
+[10/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jhonr\esp\v5.4\esp-idf\components\esptool_py && C:\Users\jhonr\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/jhonr/esp/v5.4/esp-idf -D SERIAL_TOOL=C:/Users/jhonr/.espressif/python_env/idf5.4_py3.11_env/Scripts/python.exe;;C:/Users/jhonr/esp/v5.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/jhonr/proyecto-monitoreo-crecidas/build -P C:/Users/jhonr/esp/v5.4/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM16 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 challenge_2.bin 0x8000 partition_table/partition-table.bin 0x110000 storage.bin
+esptool.py v4.8.1
+Serial port COM16
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 5c:01:3b:65:b7:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000defff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x0018ffff...
+SHA digest in image updated
+Compressed 25952 bytes to 16362...
+Writing at 0x00001000... (100 %)
+Wrote 25952 bytes (16362 compressed) at 0x00001000 in 0.6 seconds (effective 328.9 kbit/s)...
+Hash of data verified.
+Compressed 847584 bytes to 532365...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d25f... (6 %)
+Writing at 0x00026576... (9 %)
+Writing at 0x00031199... (12 %)
+Writing at 0x00036934... (15 %)
+Writing at 0x0003c8bb... (18 %)
+Writing at 0x00042783... (21 %)
+Writing at 0x000484b6... (24 %)
+Writing at 0x0004e3da... (27 %)
+Writing at 0x00053fc5... (30 %)
+Writing at 0x0005a20d... (33 %)
+Writing at 0x0005f3e4... (36 %)
+Writing at 0x0006472c... (39 %)
+Writing at 0x0006a035... (42 %)
+Writing at 0x0006f687... (45 %)
+Writing at 0x000748cd... (48 %)
+Writing at 0x0007a192... (51 %)
+Writing at 0x00080296... (54 %)
+Writing at 0x000859b6... (57 %)
+Writing at 0x0008b69a... (60 %)
+Writing at 0x00091408... (63 %)
+Writing at 0x00096c1a... (66 %)
+Writing at 0x0009c856... (69 %)
+Writing at 0x000a25f1... (72 %)
+Writing at 0x000a84b9... (75 %)
+Writing at 0x000add0d... (78 %)
+Writing at 0x000b6aa2... (81 %)
+Writing at 0x000be521... (84 %)
+Writing at 0x000c4227... (87 %)
+Writing at 0x000cb257... (90 %)
+Writing at 0x000d0c65... (93 %)
+Writing at 0x000d6f0d... (96 %)
+Writing at 0x000dc172... (100 %)
+Wrote 847584 bytes (532365 compressed) at 0x00010000 in 12.2 seconds (effective 556.2 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 119...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (119 compressed) at 0x00008000 in 0.0 seconds (effective 653.0 kbit/s)...
+Hash of data verified.
+Compressed 524288 bytes to 16778...
+Writing at 0x00110000... (50 %)
+Writing at 0x00173607... (100 %)
+Wrote 524288 bytes (16778 compressed) at 0x00110000 in 2.2 seconds (effective 1891.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

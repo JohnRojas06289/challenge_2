@@ -340,9 +340,13 @@ button {
 }
 
 /* Tabla de historial */
+/* Modificar en esilos.css */
 .table-container {
     overflow-x: auto;
     padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+    max-height: 500px; /* Altura máxima para la tabla */
+    overflow-y: auto; /* Permitir scroll vertical */
 }
 
 table {
@@ -355,13 +359,15 @@ th, td {
     padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid #eee;
+    white-space: nowrap; /* Evitar que el texto se rompa */
 }
 
 th {
-    font-weight: 600;
-    color: #555;
-    position: relative;
-    cursor: pointer;
+    position: sticky; /* Hacer que los encabezados se mantengan fijos */
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
 th i {
@@ -634,4 +640,70 @@ footer {
     .level-indicator {
         margin-top: 1rem;
     }
+}
+
+
+
+/* Estilos para gráficos */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.chart-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    min-height: 250px;
+}
+
+.chart-wrapper h3 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+/* Estilos para gráficos */
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.chart-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    min-height: 250px;
+}
+
+.chart-wrapper h3 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Mejorar la tabla de registros */
+.table-container {
+    overflow-x: auto;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+    max-height: 500px; /* Altura máxima para la tabla */
+    overflow-y: auto; /* Permitir scroll vertical */
+}
+
+th {
+    position: sticky; /* Hacer que los encabezados se mantengan fijos */
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }

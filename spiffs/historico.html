@@ -13,6 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <!-- Nuestro script de JavaScript para histórico -->
     <script src="JS/historico.js" defer></script>
+    <!-- Agregar en el head de historico.html -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -50,6 +52,27 @@
                 <i class="fas fa-user-circle"></i>
             </div>
         </header>
+
+        <!-- Agregar en historico.html, después de la sección de filtros -->
+<div class="card">
+    <div class="card-header">
+        <h2>Gráficos Históricos</h2>
+    </div>
+    <div class="charts-container">
+        <div class="chart-wrapper">
+            <h3>Tendencia de Distancia</h3>
+            <canvas id="distanceChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <h3>Tendencia de Temperatura</h3>
+            <canvas id="temperatureChart"></canvas>
+        </div>
+        <div class="chart-wrapper">
+            <h3>Distribución de Estados</h3>
+            <canvas id="statusChart"></canvas>
+        </div>
+    </div>
+</div>
 
         <div class="dashboard">
             <div class="card">
@@ -89,6 +112,26 @@
                     <button id="export-csv" class="secondary-btn">
                         <i class="fas fa-file-export"></i> Exportar CSV
                     </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Gráficos Históricos</h2>
+                </div>
+                <div class="charts-container">
+                    <div class="chart-wrapper">
+                        <h3>Tendencia de Distancia</h3>
+                        <canvas id="distanceChart"></canvas>
+                    </div>
+                    <div class="chart-wrapper">
+                        <h3>Tendencia de Temperatura</h3>
+                        <canvas id="temperatureChart"></canvas>
+                    </div>
+                    <div class="chart-wrapper">
+                        <h3>Distribución de Estados</h3>
+                        <canvas id="statusChart"></canvas>
+                    </div>
                 </div>
             </div>
 

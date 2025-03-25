@@ -56,22 +56,24 @@ document.addEventListener("DOMContentLoaded", function() {
     const maxHistorialRows = 5; // Máximo de filas en el dashboard
     
     // Función para conectar el WebSocket
-    function conectarWebSocket() {
-        // Determinar la URL del WebSocket
-        const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-        const wsUrl = `${protocol}//${window.location.host}/ws`;
-        
-        console.log(`Conectando a WebSocket: ${wsUrl}`);
-        const socket = new WebSocket(wsUrl);
-        
-        // Evento de conexión establecida
-        socket.onopen = function() {
-            console.log('Conexión WebSocket establecida');
-            mostrarNotificacion('Conexión establecida', 'success');
-        };
-        
-        // Evento de mensaje recibido
-        socket.onmessage = function(event) {
+    // Función para conectar el WebSocket
+function conectarWebSocket() {
+    // Determinar la URL del WebSocket
+    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const wsUrl = `${protocol}//${window.location.host}/ws`;
+    
+    console.log(`Conectando a WebSocket: ${wsUrl}`);
+    const socket = new WebSocket(wsUrl);
+    
+    // Evento de conexión establecida
+    socket.onopen = function() {
+        console.log('Conexión WebSocket establecida');
+        mostrarNotificacion('Conexión establecida', 'success');
+    };
+    
+    // Evento de mensaje recibido
+    socket.onmessage = function(event) {
+        try {
             const data = JSON.parse(event.data);
             console.log('Datos recibidos:', data);
             
@@ -88,23 +90,27 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Actualizar el historial
             actualizarHistorial(data);
-        };
-        
-        // Evento de error
-        socket.onerror = function(error) {
-            console.error('Error en la conexión WebSocket:', error);
-            mostrarNotificacion('Error de conexión', 'error');
-        };
-        
-        // Evento de conexión cerrada
-        socket.onclose = function() {
-            console.log('Conexión WebSocket cerrada. Intentando reconectar en 3 segundos...');
-            mostrarNotificacion('Conexión perdida. Reconectando...', 'warning');
-            setTimeout(conectarWebSocket, 3000);
-        };
-        
-        return socket;
-    }
+        } catch (e) {
+            console.error('Error al procesar mensaje WebSocket:', e);
+        }
+    };
+    
+    // Evento de error
+    socket.onerror = function(error) {
+        console.error('Error en la conexión WebSocket:', error);
+        mostrarNotificacion('Error de conexión', 'error');
+    };
+    
+    // Evento de conexión cerrada
+    socket.onclose = function() {
+        console.log('Conexión WebSocket cerrada. Intentando reconectar en 3 segundos...');
+        mostrarNotificacion('Conexión perdida. Reconectando...', 'warning');
+        setTimeout(conectarWebSocket, 3000);
+    };
+    
+    return socket;
+}
+
     
     // Función para actualizar el estado visual según el estado recibido
     function actualizarEstado(estado) {
@@ -293,3 +299,155 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 });
+
+
+
+  // Función para obtener los datos actuales
+  function obtenerDatosActuales() {
+    fetch('/api/current')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Datos recibidos:', data);
+            
+            // Actualizar los elementos visuales con los datos recibidos
+            document.getElementById("distance").innerText = data.distance.toFixed(1) + " cm";
+            gauge.refresh(data.temperature);
+            gHumidity.refresh(data.humidity);
+            
+            // Actualizar el estado según la distancia
+            actualizarEstado(data.status);
+            
+            // Actualizar el indicador de nivel
+            actualizarNivelIndicador(data.distance);
+            
+            // Actualizar el historial
+            actualizarHistorial(data);
+        })
+        .catch(error => {
+            console.error('Error al obtener datos actuales:', error);
+        });
+}
+
+// Función para actualizar el estado visual según el estado recibido
+function actualizarEstado(estado) {
+    const statusDiv = document.getElementById("status");
+    statusDiv.innerText = estado;
+    statusDiv.className = "status " + estado.toLowerCase();
+}
+
+// Función para actualizar el indicador visual de nivel
+function actualizarNivelIndicador(distancia) {
+    const levelFill = document.getElementById("level-fill");
+    // Calcular altura del relleno (invertido: menor distancia = mayor relleno)
+    let heightPercentage = 0;
+    
+    if (distancia <= 10) {
+        // Por debajo de 10cm, lleno al 100%
+        heightPercentage = 100;
+    } else if (distancia >= 40) {
+        // Por encima de 40cm, vacío
+        heightPercentage = 0;
+    } else {
+        // Entre 10 y 40cm, escalado
+        heightPercentage = 100 - ((distancia - 10) / 30 * 100);
+    }
+    
+    levelFill.style.height = heightPercentage + '%';
+}
+
+// Función para actualizar el historial de reportes
+function actualizarHistorial(data) {
+    // Agregar al inicio del array para mostrar lo más reciente primero
+    const fecha = new Date().toLocaleString();
+    
+    historialDatos.unshift({
+        fecha: fecha,
+        distancia: data.distance.toFixed(1),
+        temperatura: data.temperature.toFixed(1),
+        estado: data.status
+    });
+    
+    // Limitar el tamaño del historial
+    if (historialDatos.length > maxHistorialRows) {
+        historialDatos = historialDatos.slice(0, maxHistorialRows);
+    }
+    
+    // Actualizar la tabla en el DOM
+    const tabla = document.getElementById("historial").getElementsByTagName('tbody')[0];
+    tabla.innerHTML = ''; // Limpiar tabla
+    
+    historialDatos.forEach(item => {
+        const row = tabla.insertRow();
+        row.className = item.estado.toLowerCase();
+        
+        const cellFecha = row.insertCell(0);
+        const cellDistancia = row.insertCell(1);
+        const cellTemperatura = row.insertCell(2);
+        const cellEstado = row.insertCell(3);
+        
+        cellFecha.innerHTML = item.fecha;
+        cellDistancia.innerHTML = `${item.distancia} cm`;
+        cellTemperatura.innerHTML = `${item.temperatura} °C`;
+        cellEstado.innerHTML = item.estado;
+    });
+    
+    // Guardar en localStorage para persistencia
+    localStorage.setItem('recientHistorial', JSON.stringify(historialDatos));
+}
+
+// Función para apagar dispositivos
+window.apagarDispositivos = function() {
+    fetch('/apagar', { method: 'POST' })
+        .then(response => response.text())
+        .then(data => {
+            console.log('Respuesta del servidor:', data);
+            // Mostrar notificación (opcional)
+        })
+        .catch(error => {
+            console.error('Error al enviar comando:', error);
+        });
+};
+
+// Historial para datos recientes
+let historialDatos = [];
+const maxHistorialRows = 5; // Máximo de filas en el dashboard
+
+// Cargar historial desde localStorage si existe
+function cargarHistorialGuardado() {
+    const historialGuardado = localStorage.getItem('recientHistorial');
+    if (historialGuardado) {
+        try {
+            historialDatos = JSON.parse(historialGuardado);
+            // Actualizar la tabla con los datos guardados
+            const tabla = document.getElementById("historial").getElementsByTagName('tbody')[0];
+            tabla.innerHTML = ''; // Limpiar tabla
+            
+            historialDatos.forEach(item => {
+                const row = tabla.insertRow();
+                row.className = item.estado.toLowerCase();
+                
+                const cellFecha = row.insertCell(0);
+                const cellDistancia = row.insertCell(1);
+                const cellTemperatura = row.insertCell(2);
+                const cellEstado = row.insertCell(3);
+                
+                cellFecha.innerHTML = item.fecha;
+                cellDistancia.innerHTML = `${item.distancia} cm`;
+                cellTemperatura.innerHTML = `${item.temperatura} °C`;
+                cellEstado.innerHTML = item.estado;
+            });
+        } catch (e) {
+            console.error('Error al cargar historial:', e);
+            // Si hay error, iniciar con array vacío
+            historialDatos = [];
+        }
+    }
+}
+
+// Cargar datos guardados
+cargarHistorialGuardado();
+
+// Iniciar actualización periódica de datos
+obtenerDatosActuales(); // Primera carga inmediata
+setInterval(obtenerDatosActuales, 1000); // Actualizar cada segundo
+;
