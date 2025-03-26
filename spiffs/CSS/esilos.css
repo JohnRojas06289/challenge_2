@@ -695,15 +695,6 @@ footer {
     text-align: center;
 }
 
-/* Mejorar la tabla de registros */
-.table-container {
-    overflow-x: auto;
-    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
-    margin-bottom: 1rem;
-    max-height: 500px; /* Altura máxima para la tabla */
-    overflow-y: auto; /* Permitir scroll vertical */
-}
-
 th {
     position: sticky; /* Hacer que los encabezados se mantengan fijos */
     top: 0;

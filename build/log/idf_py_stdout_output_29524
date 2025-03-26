@@ -1,0 +1,444 @@
+��xx@c�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 25 2025 21:44:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot:  3 storage          Unknown data     01 82 00110000 00080000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e02ch (122924) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0002e054 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002e078 vaddr=3ffb0000 size=01fa0h (  8096) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9553ch (611644) map[0m
+[0;32mI (359) esp_image: segment 4: paddr=000c5564 vaddr=3ffb1fa0 size=0208ch (  8332) load[0m
+[0;32mI (362) esp_image: segment 5: paddr=000c75f8 vaddr=40080000 size=178b8h ( 96440) load[0m
+[0;32mI (411) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (411) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (430) cpu_start: Pro cpu start user code[0m
+[0;32mI (430) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (430) app_init: Application information:[0m
+[0;32mI (433) app_init: Project name:     challenge_2[0m
+[0;32mI (438) app_init: App version:      19613c4-dirty[0m
+[0;32mI (444) app_init: Compile time:     Mar 25 2025 23:09:43[0m
+[0;32mI (450) app_init: ELF file SHA256:  be437282d...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (460) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (464) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (469) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB8C48 len 000273B8 (156 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (500) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 400978B8 len 00008748 (33 KiB): IRAM[0m
+[0;32mI (514) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (535) main_task: Started on CPU0[0m
+[0;32mI (545) main_task: Calling app_main()[0m
+[0;32mI (575) challenge_2: Tamaño de la partición: total: 474641, usado: 76555[0m
+[0;32mI (585) challenge_2: Archivo encontrado: historico.html[0m
+[0;32mI (585) challenge_2: Archivo encontrado: index.html[0m
+[0;32mI (585) challenge_2: Archivo encontrado: package.json[0m
+[0;32mI (595) challenge_2: Archivo encontrado: server.js[0m
+[0;32mI (595) challenge_2: Archivo encontrado: CSS/esilos.css[0m
+[0;32mI (605) challenge_2: Archivo encontrado: JS/historico.js[0m
+[0;32mI (615) challenge_2: Archivo encontrado: JS/script.js[0m
+[0;32mI (635) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (645) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (655) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (665) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (675) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (685) challenge_2: GPIO e inicialización de sensores completada[0m
+[0;32mI (725) wifi:wifi driver task: 3ffc15c0, prio:23, stack:6656, core=0[0m
+[0;32mI (735) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (735) wifi:wifi certification version: v7.0[0m
+[0;32mI (735) wifi:config NVS flash: enabled[0m
+[0;32mI (735) wifi:config nano formatting: disabled[0m
+[0;32mI (735) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (745) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (745) wifi:Init management short buffer num: 32[0m
+[0;32mI (755) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (755) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (765) wifi:Init static rx buffer num: 10[0m
+[0;32mI (765) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (765) wifi_init: rx ba win: 6[0m
+[0;32mI (775) wifi_init: accept mbox: 6[0m
+[0;32mI (775) wifi_init: tcpip mbox: 32[0m
+[0;32mI (785) wifi_init: udp mbox: 6[0m
+[0;32mI (785) wifi_init: tcp mbox: 6[0m
+[0;32mI (785) wifi_init: tcp tx win: 5760[0m
+[0;32mI (795) wifi_init: tcp rx win: 5760[0m
+[0;32mI (795) wifi_init: tcp mss: 1440[0m
+[0;32mI (805) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (805) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (815) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (895) wifi:mode : sta (5c:01:3b:65:b7:6c)[0m
+[0;32mI (895) wifi:enable tsf[0m
+[0;32mI (905) challenge_2: Conectando a Realme...[0m
+[0;32mI (915) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (915) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (965) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (975) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1025) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1035) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1035) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (3455) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (3465) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3465) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3475) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3485) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3505) wifi:connected with Realme, aid = 2, channel 1, BW20, bssid = be:a4:41:b7:99:38[0m
+[0;32mI (3505) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (3515) wifi:pm start, type: 1[0m
+
+[0;32mI (3515) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3535) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3535) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4555) esp_netif_handlers: sta ip: 192.168.238.32, mask: 255.255.255.0, gw: 192.168.238.191[0m
+[0;32mI (4555) challenge_2: Conectado con dirección IP: 192.168.238.32[0m
+[0;32mI (4555) challenge_2: Conexión establecida[0m
+[0;32mI (4565) challenge_2: Servidor web iniciado correctamente[0m
+[0;32mI (4605) challenge_2: Sistema inicializado correctamente[0m
+[0;32mI (4605) main_task: Returned from app_main()[0m
+[0;32mI (4655) challenge_2: Lectura TMP36GZ: ADC=171, Voltage=0.138V, Temp=6.0°C[0m
+[0;32mI (4655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (5735) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (5735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (6815) challenge_2: Lectura TMP36GZ: ADC=177, Voltage=0.143V, Temp=6.0°C[0m
+[0;32mI (6815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (7895) challenge_2: Lectura TMP36GZ: ADC=191, Voltage=0.154V, Temp=6.0°C[0m
+[0;32mI (7895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (8475) challenge_2: Petición recibida para URI: /historico.html[0m
+[0;32mI (8665) wifi:<ba-add>idx:0 (ifx:0, be:a4:41:b7:99:38), tid:0, ssn:16, winSize:64[0m
+[0;32mI (8665) challenge_2: Petición recibida para URI: /CSS/esilos.css[0m
+[0;32mI (8715) challenge_2: Petición recibida para URI: /JS/historico.js[0m
+[0;32mI (8975) challenge_2: Lectura TMP36GZ: ADC=164, Voltage=0.132V, Temp=6.0°C[0m
+[0;32mI (8975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (10055) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (10055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (11135) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (11135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (12215) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (12215) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (13295) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (13295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (14375) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (14375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (15455) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (15455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (16535) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (16535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (17615) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (17615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (18695) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (18695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (19775) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (19775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (20855) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (20855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (21935) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (21935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (23015) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (23015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (24095) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (24095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (25175) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (25175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (26255) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (26255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (27335) challenge_2: Lectura TMP36GZ: ADC=191, Voltage=0.154V, Temp=6.0°C[0m
+[0;32mI (27335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (28415) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (28415) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (29495) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (29495) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (30575) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (30575) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (31655) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (31655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (32735) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (32735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (33815) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (33815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (34895) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (34895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (35975) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (35975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (37055) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (37055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (38135) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (38135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (39215) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (39215) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (40295) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (40295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (41375) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (41375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (42455) challenge_2: Lectura TMP36GZ: ADC=195, Voltage=0.157V, Temp=6.0°C[0m
+[0;32mI (42455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (43535) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (43535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (44615) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (44615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (45695) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (45695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (46775) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (46775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (47855) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (47855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (48935) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (48935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (50015) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (50015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (51095) challenge_2: Lectura TMP36GZ: ADC=195, Voltage=0.157V, Temp=6.0°C[0m
+[0;32mI (51095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (52175) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (52175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (53255) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (53255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (54335) challenge_2: Lectura TMP36GZ: ADC=195, Voltage=0.157V, Temp=6.0°C[0m
+[0;32mI (54335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (55415) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (55415) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (56495) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (56495) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (57575) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (57575) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (58655) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (58655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (59735) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (59735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (60815) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (60815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (61895) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (61895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (62975) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (62975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (64055) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (64055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (65135) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (65135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (66215) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (66215) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (67295) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (67295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (68375) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (68375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (69455) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (69455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (70535) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (70535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (71615) challenge_2: Lectura TMP36GZ: ADC=189, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (71615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (72695) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (72695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (73775) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (73775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (74855) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (74855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (75935) challenge_2: Lectura TMP36GZ: ADC=196, Voltage=0.158V, Temp=6.0°C[0m
+[0;32mI (75935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (77015) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (77015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (78095) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (78095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (79175) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (79175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (80255) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (80255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (81335) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (81335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (82415) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (82415) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (83495) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (83495) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (84575) challenge_2: Lectura TMP36GZ: ADC=196, Voltage=0.158V, Temp=6.0°C[0m
+[0;32mI (84575) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (85655) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (85655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (86735) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (86735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (87815) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (87815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (88895) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (88895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (89975) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (89975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (91055) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (91055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (92135) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (92135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (93215) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (93215) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (94295) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (94295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (95375) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (95375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (96455) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (96455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (97535) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (97535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (98615) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (98615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (99695) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (99695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (100775) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (100775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (101855) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (101855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (102935) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (102935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (104015) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (104015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (105095) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (105095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (106175) challenge_2: Lectura TMP36GZ: ADC=195, Voltage=0.157V, Temp=6.0°C[0m
+[0;32mI (106175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (107255) challenge_2: Lectura TMP36GZ: ADC=196, Voltage=0.158V, Temp=6.0°C[0m
+[0;32mI (107255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (108335) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (108335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (109415) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (109415) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (110495) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (110495) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (111575) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (111575) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (112655) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (112655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (113735) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (113735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (114815) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (114815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (115895) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (115895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (116975) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (116975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (118055) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (118055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (119135) challenge_2: Lectura TMP36GZ: ADC=196, Voltage=0.158V, Temp=6.0°C[0m
+[0;32mI (119135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (120215) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (120215) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (121295) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (121295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (122375) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (122375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (123455) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (123455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (124535) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (124535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (125615) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (125615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (126695) challenge_2: Lectura TMP36GZ: ADC=171, Voltage=0.138V, Temp=6.0°C[0m
+[0;32mI (126695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (127775) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (127775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (128855) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (128855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (129935) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (129935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (131015) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (131015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (132095) challenge_2: Lectura TMP36GZ: ADC=196, Voltage=0.158V, Temp=6.0°C[0m
+[0;32mI (132095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (133175) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (133175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (134255) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (134255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (135335) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (135335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (136415) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (136415) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (137495) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (137495) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (138575) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (138575) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (139655) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (139655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (140735) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (140735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (141815) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (141815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (142895) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (142895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (143975) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (143975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (145055) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (145055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (146135) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (146135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (147215) challenge_2: Lectura TMP36GZ: ADC=211, Voltage=0.170V, Temp=6.0°C[0m
+[0;32mI (147215) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (148295) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (148295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (149375) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (149375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (150455) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (150455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (151535) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (151535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (152615) challenge_2: Lectura TMP36GZ: ADC=210, Voltage=0.169V, Temp=6.0°C[0m
+[0;32mI (152615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (153695) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (153695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (154775) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (154775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (155855) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (155855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (156935) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (156935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (158015) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (158015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (159095) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (159095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (160175) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (160175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (161255) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (161255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (161445) challenge_2: Petición recibida para URI: /CSS/esilos.css[0m
+[0;32mI (162335) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (162335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (163415) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (163415) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (164495) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (164495) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (165575) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (165575) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (166655) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (166655) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (167735) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (167735) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (168815) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (168815) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (169895) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (169895) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (170975) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (170975) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (172055) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (172055) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (173135) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (173135) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
