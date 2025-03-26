@@ -1,3 +1,123 @@
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/chart.js';
+document.head.appendChild(script);
+
+// Variables para los gráficos
+let distanceChart, temperatureChart, statusChart;
+
+// Inicializar gráficos una vez que Chart.js esté cargado
+script.onload = function() {
+    // Configuración de los gráficos
+    initCharts();
+};
+
+// Función para inicializar los gráficos
+function initCharts() {
+    // Gráfico de distancia
+    const distanceCtx = document.getElementById('distanceChart').getContext('2d');
+    distanceChart = new Chart(distanceCtx, {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Distancia (cm)',
+                data: [],
+                borderColor: '#0056b3',
+                backgroundColor: 'rgba(0, 86, 179, 0.1)',
+                tension: 0.1,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Distancia (cm)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tiempo'
+                    }
+                }
+            }
+        }
+    });
+    
+    // Gráfico de temperatura
+    const temperatureCtx = document.getElementById('temperatureChart').getContext('2d');
+    temperatureChart = new Chart(temperatureCtx, {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Temperatura (°C)',
+                data: [],
+                borderColor: '#dc3545',
+                backgroundColor: 'rgba(220, 53, 69, 0.1)',
+                tension: 0.1,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Temperatura (°C)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tiempo'
+                    }
+                }
+            }
+        }
+    });
+    
+    // Gráfico de estados (distribución)
+    const statusCtx = document.getElementById('statusChart').getContext('2d');
+    statusChart = new Chart(statusCtx, {
+        type: 'bar',
+        data: {
+            labels: ['NORMAL', 'CAUTION', 'WARNING', 'CRITICAL'],
+            datasets: [{
+                label: 'Número de registros',
+                data: [0, 0, 0, 0],
+                backgroundColor: [
+                    '#28a745',  // NORMAL
+                    '#ffc107',  // CAUTION
+                    '#fd7e14',  // WARNING
+                    '#dc3545'   // CRITICAL
+                ]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Cantidad'
+                    }
+                }
+            }
+        }
+    });
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Inicializar el toggle del sidebar
     const sidebarToggle = document.getElementById('sidebar-toggle');
@@ -154,13 +274,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     // Cargar datos
-function cargarDatos() {
-    // Mostrar indicador de carga
-    const tbody = document.querySelector("#historial-completo tbody");
-    if (!tbody) {
-        console.error('No se encontró la tabla de historial');
-        return;
-    }
+    function cargarDatos() {
+        // Mostrar indicador de carga
+        const tbody = document.querySelector("#historial-completo tbody");
+        tbody.innerHTML = '<tr><td colspan="5" class="loading-message">Cargando datos...</td></tr>';
         
         fetch('/api/history')
             .then(response => response.json())
@@ -175,6 +292,10 @@ function cargarDatos() {
                 filtrarYMostrarDatos();
                 actualizarEstadisticas();
                 actualizarIndicadoresOrden();
+                // Actualizar gráficos si están inicializados
+                if (typeof distanceChart !== 'undefined') {
+                    actualizarGraficos(state.data);
+                }        
             })
             .catch(error => {
                 console.error('Error al cargar datos históricos:', error);
@@ -191,6 +312,54 @@ function cargarDatos() {
                 }
             });
     }
+
+
+    function actualizarGraficos(data) {
+        // Limitar a los últimos 20 registros para los gráficos de línea
+        const recentData = data.slice(0, 20).reverse();
+        
+        // Datos para gráficos de línea
+        const labels = recentData.map(item => {
+            const date = new Date(item.date);
+            return date.toLocaleTimeString();
+        });
+        
+        const distanceData = recentData.map(item => item.distance);
+        const temperatureData = recentData.map(item => item.temperature);
+        
+        // Actualizar gráficos de línea
+        distanceChart.data.labels = labels;
+        distanceChart.data.datasets[0].data = distanceData;
+        distanceChart.update();
+        
+        temperatureChart.data.labels = labels;
+        temperatureChart.data.datasets[0].data = temperatureData;
+        temperatureChart.update();
+        
+        // Contar ocurrencias de cada estado
+        const statusCounts = {
+            'NORMAL': 0,
+            'CAUTION': 0,
+            'WARNING': 0,
+            'CRITICAL': 0
+        };
+        
+        data.forEach(item => {
+            if (item.status in statusCounts) {
+                statusCounts[item.status]++;
+            }
+        });
+        
+        // Actualizar gráfico de barras
+        statusChart.data.datasets[0].data = [
+            statusCounts['NORMAL'],
+            statusCounts['CAUTION'],
+            statusCounts['WARNING'],
+            statusCounts['CRITICAL']
+        ];
+        statusChart.update();
+    }
+    
     
     // Generar datos simulados para pruebas
     function generarDatosSimulados() {
@@ -297,13 +466,212 @@ function cargarDatos() {
         });
     }
     
-    // Filtrar y mostrar datos
     function filtrarYMostrarDatos() {
         filtrarDatos();
         mostrarDatos();
         actualizarControlPaginacion();
         actualizarEstadisticas();
+        
+        // Actualizar gráficos con datos filtrados
+        if (typeof distanceChart !== 'undefined') {
+            actualizarGraficos(state.filteredData);
+        }
     }
+
+
+
+
+    // Variables para los gráficos
+let distanceChart, temperatureChart, statusChart;
+
+// Función para inicializar los gráficos
+function initCharts() {
+    // Gráfico de distancia
+    const distanceCtx = document.getElementById('distanceChart').getContext('2d');
+    distanceChart = new Chart(distanceCtx, {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Distancia (cm)',
+                data: [],
+                borderColor: '#0056b3',
+                backgroundColor: 'rgba(0, 86, 179, 0.1)',
+                tension: 0.1,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Distancia (cm)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tiempo'
+                    }
+                }
+            }
+        }
+    });
+    
+    // Gráfico de temperatura
+    const temperatureCtx = document.getElementById('temperatureChart').getContext('2d');
+    temperatureChart = new Chart(temperatureCtx, {
+        type: 'line',
+        data: {
+            labels: [],
+            datasets: [{
+                label: 'Temperatura (°C)',
+                data: [],
+                borderColor: '#dc3545',
+                backgroundColor: 'rgba(220, 53, 69, 0.1)',
+                tension: 0.1,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    title: {
+                        display: true,
+                        text: 'Temperatura (°C)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Tiempo'
+                    }
+                }
+            }
+        }
+    });
+    
+    // Gráfico de estados (distribución)
+    const statusCtx = document.getElementById('statusChart').getContext('2d');
+    statusChart = new Chart(statusCtx, {
+        type: 'bar',
+        data: {
+            labels: ['NORMAL', 'CAUTION', 'WARNING', 'CRITICAL'],
+            datasets: [{
+                label: 'Número de registros',
+                data: [0, 0, 0, 0],
+                backgroundColor: [
+                    '#28a745',  // NORMAL
+                    '#ffc107',  // CAUTION
+                    '#fd7e14',  // WARNING
+                    '#dc3545'   // CRITICAL
+                ]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Cantidad'
+                    }
+                }
+            }
+        }
+    });
+}
+
+// Función para actualizar los gráficos
+function actualizarGraficos(data) {
+    // Limitar a los últimos 20 registros para los gráficos de línea
+    const recentData = data.slice(0, 20).reverse();
+    
+    // Datos para gráficos de línea
+    const labels = recentData.map(item => {
+        const date = new Date(item.timestamp);
+        return date.toLocaleTimeString();
+    });
+    
+    const distanceData = recentData.map(item => item.distance);
+    const temperatureData = recentData.map(item => item.temperature);
+    
+    // Actualizar gráficos de línea
+    distanceChart.data.labels = labels;
+    distanceChart.data.datasets[0].data = distanceData;
+    distanceChart.update();
+    
+    temperatureChart.data.labels = labels;
+    temperatureChart.data.datasets[0].data = temperatureData;
+    temperatureChart.update();
+    
+    // Contar ocurrencias de cada estado
+    const statusCounts = {
+        'NORMAL': 0,
+        'CAUTION': 0,
+        'WARNING': 0,
+        'CRITICAL': 0
+    };
+    
+    data.forEach(item => {
+        if (item.status in statusCounts) {
+            statusCounts[item.status]++;
+        }
+    });
+    
+    // Actualizar gráfico de barras
+    statusChart.data.datasets[0].data = [
+        statusCounts['NORMAL'],
+        statusCounts['CAUTION'],
+        statusCounts['WARNING'],
+        statusCounts['CRITICAL']
+    ];
+    statusChart.update();
+}
+
+// Añadir la inicialización de gráficos cuando se carga el documento
+document.addEventListener("DOMContentLoaded", function() {
+    // Inicializar los gráficos
+    initCharts();
+    
+    // Resto del código existente...
+    
+    // Modificar la función cargarDatos para actualizar los gráficos
+    function cargarDatos() {
+        // [código existente...]
+        
+        fetch('/api/history')
+            .then(response => response.json())
+            .then(data => {
+                // [código existente...]
+                
+                // Actualizar gráficos con los datos cargados
+                actualizarGraficos(state.data);
+            })
+            .catch(error => {
+                // [código existente...]
+            });
+    }
+    
+    // Modificar la función filtrarYMostrarDatos para actualizar los gráficos
+    function filtrarYMostrarDatos() {
+        filtrarDatos();
+        mostrarDatos();
+        actualizarControlPaginacion();
+        actualizarEstadisticas();
+        
+        // Actualizar gráficos con datos filtrados
+        actualizarGraficos(state.filteredData);
+    }
+});
     
     // Mostrar datos en la tabla
     function mostrarDatos() {

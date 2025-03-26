@@ -217,12 +217,17 @@ header h1 {
     gap: 1.5rem;
 }
 
+.card-stats{
+    display: none;
+}
+
 .card-header {
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #eee;
+    display: none;
 }
 
 .card-header h2 {
