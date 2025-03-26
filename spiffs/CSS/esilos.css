@@ -196,6 +196,7 @@ header h1 {
 .card {
     background-color: #fff;
     border-radius: 10px;
+    width: 100%;
     box-shadow: var(--box-shadow);
     overflow: hidden;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
@@ -347,6 +348,7 @@ button {
 /* Tabla de historial */
 /* Modificar en esilos.css */
 .table-container {
+    width: 100%;
     overflow-x: auto;
     padding: 0.5rem 1.5rem 1.5rem 1.5rem;
     margin-bottom: 1rem;

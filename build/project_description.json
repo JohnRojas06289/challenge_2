@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "challenge_2",
-    "project_version":    "19613c4-dirty",
+    "project_version":    "c934d28-dirty",
     "project_path":       "C:/Users/jhonr/proyecto-monitoreo-crecidas",
     "idf_path":           "C:/Users/jhonr/esp/v5.4/esp-idf",
     "build_dir":          "C:/Users/jhonr/proyecto-monitoreo-crecidas/build",
