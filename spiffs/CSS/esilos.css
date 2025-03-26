@@ -669,19 +669,18 @@ footer {
 
 
 /* Estilos para gráficos */
+.chart-wrapper {
+    height: 300px;
+    min-height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
 .charts-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
     padding: 1rem 1.5rem;
-}
-
-.chart-wrapper {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 1rem;
-    min-height: 250px;
 }
 
 .chart-wrapper h3 {

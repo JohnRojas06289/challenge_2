@@ -1,0 +1,485 @@
+�xxxxxx�x�xZ�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 25 2025 21:44:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot:  3 storage          Unknown data     01 82 00110000 00080000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e02ch (122924) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0002e054 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002e078 vaddr=3ffb0000 size=01fa0h (  8096) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9553ch (611644) map[0m
+[0;32mI (359) esp_image: segment 4: paddr=000c5564 vaddr=3ffb1fa0 size=0208ch (  8332) load[0m
+[0;32mI (362) esp_image: segment 5: paddr=000c75f8 vaddr=40080000 size=178b8h ( 96440) load[0m
+[0;32mI (411) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (411) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (430) cpu_start: Pro cpu start user code[0m
+[0;32mI (430) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (430) app_init: Application information:[0m
+[0;32mI (433) app_init: Project name:     challenge_2[0m
+[0;32mI (438) app_init: App version:      eb82c9b-dirty[0m
+[0;32mI (444) app_init: Compile time:     Mar 25 2025 21:43:37[0m
+[0;32mI (450) app_init: ELF file SHA256:  59b0e5c58...[0m
+[0;32mI (455) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (460) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (464) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (469) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB8C48 len 000273B8 (156 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (500) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 400978B8 len 00008748 (33 KiB): IRAM[0m
+[0;32mI (514) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (521) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (535) main_task: Started on CPU0[0m
+[0;32mI (545) main_task: Calling app_main()[0m
+[0;32mI (575) challenge_2: Tamaño de la partición: total: 474641, usado: 75300[0m
+[0;32mI (585) challenge_2: Archivo encontrado: historico.html[0m
+[0;32mI (585) challenge_2: Archivo encontrado: index.html[0m
+[0;32mI (585) challenge_2: Archivo encontrado: package.json[0m
+[0;32mI (595) challenge_2: Archivo encontrado: server.js[0m
+[0;32mI (595) challenge_2: Archivo encontrado: CSS/esilos.css[0m
+[0;32mI (605) challenge_2: Archivo encontrado: JS/historico.js[0m
+[0;32mI (615) challenge_2: Archivo encontrado: JS/script.js[0m
+[0;32mI (635) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (635) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (645) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (655) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (665) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (675) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (685) challenge_2: GPIO e inicialización de sensores completada[0m
+[0;32mI (725) wifi:wifi driver task: 3ffc15c0, prio:23, stack:6656, core=0[0m
+[0;32mI (735) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (735) wifi:wifi certification version: v7.0[0m
+[0;32mI (735) wifi:config NVS flash: enabled[0m
+[0;32mI (735) wifi:config nano formatting: disabled[0m
+[0;32mI (735) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (745) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (745) wifi:Init management short buffer num: 32[0m
+[0;32mI (755) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (755) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (765) wifi:Init static rx buffer num: 10[0m
+[0;32mI (765) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (765) wifi_init: rx ba win: 6[0m
+[0;32mI (775) wifi_init: accept mbox: 6[0m
+[0;32mI (775) wifi_init: tcpip mbox: 32[0m
+[0;32mI (785) wifi_init: udp mbox: 6[0m
+[0;32mI (785) wifi_init: tcp mbox: 6[0m
+[0;32mI (785) wifi_init: tcp tx win: 5760[0m
+[0;32mI (795) wifi_init: tcp rx win: 5760[0m
+[0;32mI (795) wifi_init: tcp mss: 1440[0m
+[0;32mI (805) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (805) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (815) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (895) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (915) wifi:mode : sta (5c:01:3b:65:b7:6c)[0m
+[0;32mI (915) wifi:enable tsf[0m
+[0;32mI (915) challenge_2: Conectando a Realme...[0m
+[0;32mI (925) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (925) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (935) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (945) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (975) wifi:connected with Realme, aid = 2, channel 1, BW20, bssid = be:a4:41:b7:99:38[0m
+[0;32mI (975) wifi:security: WPA2-PSK, phy: bgn, rssi: -59[0m
+[0;32mI (975) wifi:pm start, type: 1[0m
+
+[0;32mI (975) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1005) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1005) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2015) esp_netif_handlers: sta ip: 192.168.238.32, mask: 255.255.255.0, gw: 192.168.238.191[0m
+[0;32mI (2015) challenge_2: Conectado con dirección IP: 192.168.238.32[0m
+[0;32mI (2015) challenge_2: Conexión establecida[0m
+[0;32mI (2025) challenge_2: Servidor web iniciado correctamente[0m
+[0;32mI (2035) challenge_2: Sistema inicializado correctamente[0m
+[0;32mI (2045) main_task: Returned from app_main()[0m
+[0;32mI (2115) challenge_2: Lectura TMP36GZ: ADC=162, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (2115) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (2275) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (2275) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (2335) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (2335) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (2375) wifi:<ba-add>idx:0 (ifx:0, be:a4:41:b7:99:38), tid:0, ssn:16, winSize:64[0m
+[0;33mW (2385) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (2385) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (3145) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (3145) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (3185) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (3185) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (3205) challenge_2: Lectura TMP36GZ: ADC=156, Voltage=0.126V, Temp=6.0°C[0m
+[0;32mI (3205) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (3225) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (3225) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (3275) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (3275) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (4295) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (4295) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (5315) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (5315) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (5355) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (5355) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (5375) challenge_2: Lectura TMP36GZ: ADC=174, Voltage=0.140V, Temp=6.0°C[0m
+[0;32mI (5375) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (6215) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (6215) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (6345) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (6345) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (6455) challenge_2: Lectura TMP36GZ: ADC=172, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (6455) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (7175) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (7175) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (7245) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (7245) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (7305) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (7305) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (7535) challenge_2: Lectura TMP36GZ: ADC=186, Voltage=0.150V, Temp=6.0°C[0m
+[0;32mI (7535) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (7565) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (7565) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (7595) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (7595) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (8615) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (8615) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (9075) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (9075) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (9105) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (9105) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (9695) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (9695) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (10235) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (10235) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (10265) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (10275) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (10775) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (10775) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (11065) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (11075) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (11135) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (11135) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (11475) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (11475) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (11505) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (11505) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (11535) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (11535) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (11665) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (11665) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (11855) challenge_2: Lectura TMP36GZ: ADC=183, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (11855) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (12935) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (12935) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (13235) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (13245) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (14015) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (14015) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (14325) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (14325) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (14355) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (14355) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (15095) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (15095) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (15155) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (15155) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (15225) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (15225) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (15295) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (15295) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (15315) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (15315) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (15445) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (15445) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (15475) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (15475) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (16175) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (16175) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (17255) challenge_2: Lectura TMP36GZ: ADC=189, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (17255) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (17395) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (17405) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (17425) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (17425) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (18335) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (18335) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (18485) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (18485) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (18515) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (18525) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (19245) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (19245) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (19255) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (19265) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (19295) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (19295) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (19355) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (19355) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (19405) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (19405) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (19415) challenge_2: Lectura TMP36GZ: ADC=163, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (19425) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (19445) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (19445) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (20515) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (20515) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (21295) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (21295) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (21325) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (21325) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (21595) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (21595) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (22315) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (22315) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (22675) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (22675) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (23555) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (23555) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (23625) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (23625) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (23685) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (23695) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (23755) challenge_2: Lectura TMP36GZ: ADC=169, Voltage=0.136V, Temp=6.0°C[0m
+[0;32mI (23755) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (23815) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (23815) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (23855) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (23855) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (23885) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (23885) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (24835) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (24835) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (25395) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (25395) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (25915) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (25915) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (26475) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (26475) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (26995) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (26995) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (27095) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (27095) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (28055) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (28055) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (28075) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (28075) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (28165) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (28175) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (28245) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (28245) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (28745) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (28745) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (29155) challenge_2: Lectura TMP36GZ: ADC=170, Voltage=0.137V, Temp=6.0°C[0m
+[0;32mI (29155) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (30235) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (30235) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (30315) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (30315) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (31315) challenge_2: Lectura TMP36GZ: ADC=191, Voltage=0.154V, Temp=6.0°C[0m
+[0;32mI (31315) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (31415) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (31415) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (32235) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (32235) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (32395) challenge_2: Lectura TMP36GZ: ADC=167, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (32395) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (32655) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (32665) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (32775) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (32775) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (32965) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (32965) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (33475) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (33475) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (34455) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (34455) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (34555) challenge_2: Lectura TMP36GZ: ADC=172, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (34555) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (35085) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (35085) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (35635) challenge_2: Lectura TMP36GZ: ADC=184, Voltage=0.148V, Temp=6.0°C[0m
+[0;32mI (35635) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (35835) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (35835) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (36715) challenge_2: Lectura TMP36GZ: ADC=171, Voltage=0.138V, Temp=6.0°C[0m
+[0;32mI (36715) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (36735) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (36735) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (37265) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (37265) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (37675) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (37675) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (37795) challenge_2: Lectura TMP36GZ: ADC=165, Voltage=0.133V, Temp=6.0°C[0m
+[0;32mI (37795) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (38095) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (38095) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (38295) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (38295) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (38875) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (38875) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (39195) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (39195) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (39955) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (39955) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (40215) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (40215) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (40255) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (40255) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (41035) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (41035) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (41385) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (41385) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (42115) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (42115) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (42255) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (42255) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (43195) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (43195) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (44275) challenge_2: Lectura TMP36GZ: ADC=171, Voltage=0.138V, Temp=6.0°C[0m
+[0;32mI (44275) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (45355) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (45355) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (45865) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (45865) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (46085) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (46085) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (46275) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (46285) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (46435) challenge_2: Lectura TMP36GZ: ADC=177, Voltage=0.143V, Temp=6.0°C[0m
+[0;32mI (46435) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (47165) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (47165) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (47515) challenge_2: Lectura TMP36GZ: ADC=174, Voltage=0.140V, Temp=6.0°C[0m
+[0;32mI (47515) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (48205) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (48205) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (48595) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (48595) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (49355) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (49355) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (49675) challenge_2: Lectura TMP36GZ: ADC=172, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (49675) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (50235) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (50235) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (50575) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (50575) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (50755) challenge_2: Lectura TMP36GZ: ADC=174, Voltage=0.140V, Temp=6.0°C[0m
+[0;32mI (50755) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (50815) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (50815) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (50865) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (50865) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (51835) challenge_2: Lectura TMP36GZ: ADC=184, Voltage=0.148V, Temp=6.0°C[0m
+[0;32mI (51835) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (52325) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (52325) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (52915) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (52915) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (53305) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (53305) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (53995) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (53995) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (54265) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (54265) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (55075) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (55075) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (55155) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (55155) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (56155) challenge_2: Lectura TMP36GZ: ADC=184, Voltage=0.148V, Temp=6.0°C[0m
+[0;32mI (56155) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (56515) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (56515) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (56625) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (56625) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (56685) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (56695) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (57235) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (57235) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (58315) challenge_2: Lectura TMP36GZ: ADC=183, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (58315) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (58405) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (58405) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (59245) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (59245) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (59395) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (59395) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (60305) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (60305) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (60475) challenge_2: Lectura TMP36GZ: ADC=176, Voltage=0.142V, Temp=6.0°C[0m
+[0;32mI (60475) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (61435) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (61435) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (61555) challenge_2: Lectura TMP36GZ: ADC=168, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (61555) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (62635) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (62635) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (63335) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (63335) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (63515) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (63515) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (63575) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (63575) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (63715) challenge_2: Lectura TMP36GZ: ADC=157, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (63715) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (63915) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (63915) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (64795) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (64795) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (65875) challenge_2: Lectura TMP36GZ: ADC=180, Voltage=0.145V, Temp=6.0°C[0m
+[0;32mI (65875) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (66565) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (66565) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (66635) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (66635) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (66955) challenge_2: Lectura TMP36GZ: ADC=178, Voltage=0.143V, Temp=6.0°C[0m
+[0;32mI (66955) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (67195) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (67195) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (67245) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (67255) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (68035) challenge_2: Lectura TMP36GZ: ADC=186, Voltage=0.150V, Temp=6.0°C[0m
+[0;32mI (68035) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (68405) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (68405) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (69115) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (69115) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (70195) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (70195) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (71275) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (71275) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (71885) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (71885) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;33mW (72155) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (72165) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;33mW (72265) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (72265) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (72355) challenge_2: Lectura TMP36GZ: ADC=158, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (72355) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;32mI (73435) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (73435) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (74485) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (74485) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m
+[0;32mI (74515) challenge_2: Lectura TMP36GZ: ADC=171, Voltage=0.138V, Temp=6.0°C[0m
+[0;32mI (74515) challenge_2: Distancia: 400.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: NORMAL[0m
+[0;33mW (74555) httpd_uri: httpd_uri: Method '3' not allowed for URI '/api/store'[0m
+[0;33mW (74565) httpd_txrx: httpd_resp_send_err: 405 Method Not Allowed - Specified method is invalid for this resource[0m

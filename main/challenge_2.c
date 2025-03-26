@@ -699,7 +699,7 @@ void start_webserver(void)
     config.max_open_sockets = 7;      // Aumentar conexiones simultáneas
     config.recv_wait_timeout = 10;    // Aumentar tiempo de espera
     // Utilizar una función de coincidencia de comodín para facilitar el manejo de rutas
-    config.uri_match_fn = httpd_uri_match_wildcard;
+config.uri_match_fn = httpd_uri_match_wildcard;
 
     if (httpd_start(&server, &config) == ESP_OK) {
         // Primero registra el manejador específico para la raíz
