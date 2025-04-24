@@ -35,6 +35,7 @@ function updateStatus(dist) {
     return "WARNING";
   } else {
     return "CRITICAL";
+    alert("Hola")
   }
 }
 

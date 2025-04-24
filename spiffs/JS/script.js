@@ -145,12 +145,34 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    // Función para actualizar el estado visual según el estado recibido
-    function actualizarEstado(estado) {
-        const statusDiv = document.getElementById("status");
-        statusDiv.innerText = estado;
-        statusDiv.className = "status " + estado.toLowerCase();
+// Función para actualizar el estado visual según el estado recibido
+function actualizarEstado(estado) {
+    const statusDiv = document.getElementById("status");
+    statusDiv.innerText = estado;
+    statusDiv.className = "status " + estado.toLowerCase();
+    
+    // Verificar cambio de estado para notificaciones
+    if (estado !== appState.lastStatus) {
+        appState.lastStatus = estado;
+        
+        // Mostrar notificación apropiada según el estado
+        if (estado === "CRITICAL") {
+            appState.alarmActive = true;
+            mostrarNotificacion('¡ALERTA CRÍTICA! Nivel de agua peligroso', 'critical', 'fas fa-exclamation-triangle');
+            // Mostrar el botón de apagar alarmas
+            document.getElementById("alarm-btn").style.display = "flex";
+        } else if (estado === "WARNING") {
+            mostrarNotificacion('Advertencia: Nivel de agua elevado', 'warning', 'fas fa-exclamation-circle');
+        } else if (estado === "CAUTION") {
+            mostrarNotificacion('Precaución: Nivel de agua en aumento', 'warning', 'fas fa-info-circle');
+        } else if (estado === "NORMAL" && appState.alarmActive) {
+            appState.alarmActive = false;
+            mostrarNotificacion('Nivel de agua normalizado', 'success', 'fas fa-check-circle');
+            // Ocultar el botón si ya no estamos en estado crítico
+            document.getElementById("alarm-btn").style.display = "none";
+        }
     }
+}
     
     // Función para actualizar el indicador visual de nivel
     function actualizarNivelIndicador(distancia) {
@@ -172,19 +194,42 @@ document.addEventListener("DOMContentLoaded", function() {
         levelFill.style.height = heightPercentage + '%';
     }
     
-    // Función para apagar dispositivos
-    window.apagarDispositivos = function() {
-        fetch('/apagar', { method: 'POST' })
-            .then(response => response.text())
-            .then(data => {
-                mostrarNotificacion(data, 'success');
-                console.log('Respuesta del servidor:', data);
-            })
-            .catch(error => {
-                console.error('Error al enviar comando:', error);
-                mostrarNotificacion('Error al apagar alarmas', 'error');
-            });
-    };
+// Función para apagar dispositivos
+window.apagarDispositivos = function() {
+    // Mostrar indicador de carga en el botón
+    const alarmBtn = document.getElementById("alarm-btn");
+    const originalContent = alarmBtn.innerHTML;
+    alarmBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Apagando...';
+    alarmBtn.disabled = true;
+    
+    fetch('/apagar', { method: 'POST' })
+        .then(response => response.text())
+        .then(data => {
+            // Restaurar botón después de recibir respuesta
+            alarmBtn.innerHTML = originalContent;
+            alarmBtn.disabled = false;
+            
+            // Marcar alarma como desactivada
+            appState.alarmActive = false;
+            
+            // Mostrar confirmación
+            mostrarNotificacion(data, 'success', 'fas fa-check-circle');
+            console.log('Respuesta del servidor:', data);
+            
+            // Ocultar el botón si ya no estamos en estado crítico
+            if (appState.lastStatus !== "CRITICAL") {
+                alarmBtn.style.display = "none";
+            }
+        })
+        .catch(error => {
+            // Restaurar botón en caso de error
+            alarmBtn.innerHTML = originalContent;
+            alarmBtn.disabled = false;
+            
+            console.error('Error al enviar comando:', error);
+            mostrarNotificacion('Error al apagar alarmas', 'error', 'fas fa-times-circle');
+        });
+};
     
     // Función para guardar registros en el servidor
     function guardarRegistro(data) {
@@ -264,27 +309,77 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('recientHistorial', JSON.stringify(historialDatos));
     }
     
-    // Función para mostrar notificaciones
-    function mostrarNotificacion(mensaje, tipo) {
-        // Si existe una librería de notificaciones, usarla aquí
-        console.log(`Notificación (${tipo}): ${mensaje}`);
+// Estado global para control de notificaciones
+const appState = {
+    lastStatus: null,
+    alarmActive: false,
+    lastNotificationTime: 0,
+    notificationCooldown: 5000 // 5 segundos entre notificaciones del mismo tipo
+};
+
+// Función para mostrar notificaciones
+function mostrarNotificacion(mensaje, tipo, icono) {
+    // Evitar exceso de notificaciones del mismo tipo
+    const ahora = Date.now();
+    if (ahora - appState.lastNotificationTime < appState.notificationCooldown) {
+        // Solo controlar exceso para notificaciones no críticas
+        if (tipo !== 'critical') {
+            console.log(`Notificación suprimida (cooldown): ${mensaje}`);
+            return;
+        }
+    }
+    appState.lastNotificationTime = ahora;
+    
+    // Registrar en consola
+    console.log(`Notificación (${tipo}): ${mensaje}`);
+    
+    // Eliminar notificaciones anteriores
+    const notificacionesExistentes = document.querySelectorAll('.notification');
+    notificacionesExistentes.forEach(notif => {
+        notif.classList.remove('show');
+        setTimeout(() => {
+            if (notif.parentNode) {
+                notif.parentNode.removeChild(notif);
+            }
+        }, 300);
+    });
+    
+    // Crear nueva notificación
+    const notif = document.createElement('div');
+    notif.className = `notification ${tipo}`;
+    
+    // Añadir icono si se proporciona
+    if (icono) {
+        const iconElem = document.createElement('i');
+        iconElem.className = icono;
+        notif.appendChild(iconElem);
+    }
+    
+    // Añadir mensaje
+    const msgElem = document.createElement('span');
+    msgElem.textContent = mensaje;
+    notif.appendChild(msgElem);
+    
+    // Añadir al DOM
+    document.body.appendChild(notif);
+    
+    // Mostrar con animación
+    setTimeout(() => {
+        notif.classList.add('show');
         
-        // Implementación básica (opcional)
-        const notif = document.createElement('div');
-        notif.className = `notificacion ${tipo}`;
-        notif.textContent = mensaje;
-        document.body.appendChild(notif);
+        // Tiempo extendido para notificaciones críticas
+        const displayTime = tipo === 'critical' ? 10000 : 5000;
         
         setTimeout(() => {
-            notif.classList.add('mostrar');
+            notif.classList.remove('show');
             setTimeout(() => {
-                notif.classList.remove('mostrar');
-                setTimeout(() => {
-                    document.body.removeChild(notif);
-                }, 300);
-            }, 3000);
-        }, 10);
-    }
+                if (notif.parentNode) {
+                    notif.parentNode.removeChild(notif);
+                }
+            }, 300);
+        }, displayTime);
+    }, 10);
+}
     
     // Cargar historial desde localStorage si existe
     function cargarHistorialGuardado() {

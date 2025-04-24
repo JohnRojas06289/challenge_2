@@ -1,0 +1,1957 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM13 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM13 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+[0m
+[0;33m--- 0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+[0m
+[0;33m--- 0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+[0m
+[0;33m--- 0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+[0m
+[0;33m--- 0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+[0m
+[0;33m--- 0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+[0m
+[0;33m--- 0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+[0m
+[0;33m--- 0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+[0m
+[0;33m--- 0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+[0m
+[0;33m--- 0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+[0m
+[0;33m--- 0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+[0m
+[0;33m--- 0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+[0m
+[0;33m--- 0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+[0m
+[0;33m--- 0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+[0m
+[0;33m--- 0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+[0m
+[0;33m--- 0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+[0m
+[0;33m--- 0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/netdb.c:495
+0x400ef409: getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/lwip/netdb.h:23
+ (inlined by) esp_tls_hostname_to_fd at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:210
+0x400ef71e: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:359
+0x400efc87: esp_tls_plain_tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp_tls.c:533
+0x400f1572: tcp_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport_ssl.c:148 (discriminator 1)
+0x40172bc1: esp_transport_connect at C:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/transport.c:123
+0x400db6da: esp_mqtt_task at C:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1620
+0x4008a1e5: vPortTaskWrapper at C:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b25: panic_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x40089741: esp_system_abort at C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x400915e9: __assert_func at C:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x40138f63: tcpip_send_msg_wait_sem at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x4014c622: netconn_gethostbyname_addrtype at C:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:1333
+0x40135f9d: lwip_getaddrinfo at C:/Users/jhonr/esp/v5.4/esp-idf/componen

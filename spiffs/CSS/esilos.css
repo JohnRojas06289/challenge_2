@@ -704,3 +704,78 @@ th {
     z-index: 10;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+/* Estilos para el sistema de notificaciones */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    max-width: 350px;
+    color: #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(120%);
+    transition: transform 0.3s ease-out;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #0056b3;
+}
+
+.notification.success {
+    border-left-color: var(--normal-color);
+}
+
+.notification.warning {
+    border-left-color: var(--warning-color);
+}
+
+.notification.error {
+    border-left-color: var(--danger-color);
+}
+
+.notification.critical {
+    border-left-color: var(--danger-color);
+    animation: blink 1s infinite;
+}
+
+.notification i {
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.notification critical show span{
+    color: red;
+}
+
+.notification critical show{
+    color: green;
+}
+
+.notification.success i {
+    color: var(--normal-color);
+}
+
+.notification.warning i {
+    color: var(--warning-color);
+}
+
+.notification.error i,
+.notification.critical i {
+    color: var(--danger-color);
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

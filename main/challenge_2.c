@@ -11,6 +11,7 @@
 #include "freertos/event_groups.h"
 #include "freertos/task.h"
 #include <dirent.h>
+#include "mqtt_client.h"
 #include <string.h>
 #include "driver/gpio.h"
 #include "esp_adc/adc_oneshot.h"
@@ -49,6 +50,9 @@ static sensor_data_t current_data = {
     .status = "NORMAL",
     .alarm_active = false
 };
+
+// Variables globales para MQTT
+static esp_mqtt_client_handle_t mqtt_client = NULL;
 
 // Historial de datos para API
 #define MAX_HISTORY_ENTRIES 100
@@ -94,6 +98,58 @@ void init_spiffs(void)
     } else {
         ESP_LOGI(TAG, "Tamaño de la partición: total: %d, usado: %d", total, used);
     }
+}
+
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data)
+{
+    esp_mqtt_event_handle_t event = event_data;
+    
+    switch (event->event_id) {
+        case MQTT_EVENT_CONNECTED:
+            ESP_LOGI(TAG, "MQTT conectado");
+            break;
+        case MQTT_EVENT_DISCONNECTED:
+            ESP_LOGI(TAG, "MQTT desconectado");
+            break;
+        case MQTT_EVENT_SUBSCRIBED:
+            ESP_LOGI(TAG, "MQTT suscrito");
+            break;
+        case MQTT_EVENT_UNSUBSCRIBED:
+            ESP_LOGI(TAG, "MQTT desuscrito");
+            break;
+        case MQTT_EVENT_PUBLISHED:
+            ESP_LOGI(TAG, "MQTT mensaje publicado");
+            break;
+        case MQTT_EVENT_DATA:
+            ESP_LOGI(TAG, "MQTT datos recibidos");
+            break;
+        case MQTT_EVENT_ERROR:
+            ESP_LOGI(TAG, "MQTT error");
+            break;
+        default:
+            ESP_LOGI(TAG, "Otro evento MQTT: %d", event->event_id);
+            break;
+    }
+}
+
+static void mqtt_init(void)
+{
+    esp_mqtt_client_config_t mqtt_cfg = {
+        .broker = {
+            .address.uri = "mqtt://192.168.148.118",
+        },
+        .credentials = {
+            .username = "pi",
+            .authentication = {
+                .password = "123456789",
+            },
+            .client_id = "esp32_sensor",
+        }
+    };
+    
+    mqtt_client = esp_mqtt_client_init(&mqtt_cfg);
+    esp_mqtt_client_register_event(mqtt_client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+    esp_mqtt_client_start(mqtt_client);
 }
 
 // Función para listar archivos en SPIFFS
@@ -152,6 +208,7 @@ static esp_err_t get_current_data_handler(httpd_req_t *req)
     httpd_resp_send(req, data_json, strlen(data_json));
     return ESP_OK;
 }
+
 
 // Manejador para la API de historial
 static esp_err_t get_history_data_handler(httpd_req_t *req)
@@ -514,6 +571,7 @@ void update_system_status(void)
     // Determinar estado basado en la distancia
     if (current_data.distance <= THRESHOLD_CRITICAL) {
         strncpy(current_data.status, "CRITICAL", sizeof(current_data.status));
+        
     } else if (current_data.distance <= THRESHOLD_WARNING) {
         strncpy(current_data.status, "WARNING", sizeof(current_data.status));
     } else if (current_data.distance <= THRESHOLD_CAUTION) {
@@ -635,6 +693,22 @@ void sensor_task(void *pvParameters)
         
         // Esperar antes de la siguiente lectura
         vTaskDelay(pdMS_TO_TICKS(1000));  // Leer cada segundo
+
+            // Publicar datos a través de MQTT
+        if (mqtt_client) {
+            char mqtt_payload[128];
+            snprintf(mqtt_payload, sizeof(mqtt_payload), 
+                    "{\"distance\":%.1f,\"temperature\":%.1f,\"humidity\":%.1f,\"status\":\"%s\"}",
+                    current_data.distance, current_data.temperature, 
+                    current_data.humidity, current_data.status);
+            
+            int msg_id = esp_mqtt_client_publish(mqtt_client, "river/sensors", mqtt_payload, 0, 1, 0);
+            if (msg_id != -1) {
+                ESP_LOGI(TAG, "Mensaje MQTT enviado, id=%d", msg_id);
+            } else {
+                ESP_LOGE(TAG, "Error al enviar mensaje MQTT");
+            }
+        }
     }
 }
 
@@ -806,11 +880,14 @@ void app_main(void)
     // Inicializar GPIO para sensores (incluye ADC para temperatura y lluvia)
     init_gpio();
     
-    // Inicializar WiFi
+    // Inicializar WiFi primero
     wifi_init_sta();
     
     // Iniciar servidor web
     start_webserver();
+    
+    // Inicializar cliente MQTT DESPUÉS del WiFi
+    mqtt_init();
     
     // Crear tarea para lecturas de sensores
     xTaskCreate(sensor_task, "sensor_task", 4096, NULL, tskIDLE_PRIORITY + 2, NULL);
