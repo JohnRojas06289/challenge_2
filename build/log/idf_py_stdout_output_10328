@@ -1,0 +1,226 @@
+x���xxx�xxxx�x��ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 26 2025 10:16:45[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot:  3 storage          Unknown data     01 82 00110000 00080000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2322ch (143916) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=00033254 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=00033278 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=000372cc vaddr=40080000 size=08d4ch ( 36172) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=abae0h (703200) map[0m
+[0;32mI (411) esp_image: segment 5: paddr=000ebb08 vaddr=40088d4c size=0eca8h ( 60584) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (466) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     challenge_2[0m
+[0;32mI (474) app_init: App version:      28de420-dirty[0m
+[0;32mI (479) app_init: Compile time:     Apr 24 2025 22:10:31[0m
+[0;32mI (485) app_init: ELF file SHA256:  7a7e15637...[0m
+[0;32mI (490) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (495) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (500) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (505) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (517) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFB9248 len 00026DB8 (155 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 400979F4 len 0000860C (33 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (571) main_task: Started on CPU0[0m
+[0;32mI (581) main_task: Calling app_main()[0m
+[0;32mI (611) challenge_2: Tamaño de la partición: total: 474641, usado: 81324[0m
+[0;32mI (621) challenge_2: Archivo encontrado: historico.html[0m
+[0;32mI (621) challenge_2: Archivo encontrado: index.html[0m
+[0;32mI (621) challenge_2: Archivo encontrado: package.json[0m
+[0;32mI (631) challenge_2: Archivo encontrado: server.js[0m
+[0;32mI (631) challenge_2: Archivo encontrado: CSS/esilos.css[0m
+[0;32mI (641) challenge_2: Archivo encontrado: JS/historico.js[0m
+[0;32mI (651) challenge_2: Archivo encontrado: JS/script.js[0m
+[0;32mI (671) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (671) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (671) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (681) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (691) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (701) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (711) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (721) challenge_2: GPIO e inicialización de sensores completada[0m
+[0;32mI (761) wifi:wifi driver task: 3ffc1c44, prio:23, stack:6656, core=0[0m
+[0;32mI (771) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (771) wifi:wifi certification version: v7.0[0m
+[0;32mI (771) wifi:config NVS flash: enabled[0m
+[0;32mI (771) wifi:config nano formatting: disabled[0m
+[0;32mI (771) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (781) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (781) wifi:Init management short buffer num: 32[0m
+[0;32mI (791) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (791) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (801) wifi:Init static rx buffer num: 10[0m
+[0;32mI (801) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (801) wifi_init: rx ba win: 6[0m
+[0;32mI (811) wifi_init: accept mbox: 6[0m
+[0;32mI (811) wifi_init: tcpip mbox: 32[0m
+[0;32mI (821) wifi_init: udp mbox: 6[0m
+[0;32mI (821) wifi_init: tcp mbox: 6[0m
+[0;32mI (821) wifi_init: tcp tx win: 5760[0m
+[0;32mI (831) wifi_init: tcp rx win: 5760[0m
+[0;32mI (831) wifi_init: tcp mss: 1440[0m
+[0;32mI (831) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (841) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (851) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (931) wifi:mode : sta (5c:01:3b:65:b7:6c)[0m
+[0;32mI (941) wifi:enable tsf[0m
+[0;32mI (941) challenge_2: Conectando a Realme...[0m
+[0;32mI (951) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (951) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (991) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (991) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1031) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1041) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1041) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (3461) challenge_2: Conexión Wi-Fi perdida, reconectando...[0m
+[0;32mI (3471) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3471) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3511) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3521) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3561) wifi:connected with Realme, aid = 2, channel 1, BW20, bssid = 6a:bd:e1:16:e4:83[0m
+[0;32mI (3571) wifi:security: WPA2-PSK, phy: bgn, rssi: -68[0m
+[0;32mI (3571) wifi:pm start, type: 1[0m
+
+[0;32mI (3571) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3601) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (3601) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4611) esp_netif_handlers: sta ip: 192.168.69.32, mask: 255.255.255.0, gw: 192.168.69.158[0m
+[0;32mI (4611) challenge_2: Conectado con dirección IP: 192.168.69.32[0m
+[0;32mI (4611) challenge_2: Conexión establecida[0m
+[0;32mI (4621) challenge_2: Servidor web iniciado correctamente[0m
+[0;32mI (4621) challenge_2: Otro evento MQTT: 7[0m
+[0;32mI (4641) challenge_2: Sistema inicializado correctamente[0m
+[0;32mI (4641) main_task: Returned from app_main()[0m
+[0;32mI (4711) challenge_2: Lectura TMP36GZ: ADC=259, Voltage=0.209V, Temp=6.0°C[0m
+[0;32mI (4711) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;31mE (14641) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (14641) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (14641) mqtt_client: Error transport connect[0m
+[0;32mI (14641) challenge_2: MQTT error[0m
+[0;32mI (14651) challenge_2: MQTT desconectado[0m
+[0;32mI (14651) challenge_2: Mensaje MQTT enviado, id=26101[0m
+[0;32mI (14741) challenge_2: Lectura TMP36GZ: ADC=215, Voltage=0.173V, Temp=6.0°C[0m
+[0;32mI (14741) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (15741) challenge_2: Mensaje MQTT enviado, id=64955[0m
+[0;32mI (15821) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (15821) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (16821) challenge_2: Mensaje MQTT enviado, id=59377[0m
+[0;32mI (16901) challenge_2: Lectura TMP36GZ: ADC=218, Voltage=0.176V, Temp=6.0°C[0m
+[0;32mI (16901) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (17901) challenge_2: Mensaje MQTT enviado, id=42142[0m
+[0;32mI (17981) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (17981) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=223, Humedad=100.0%[0m
+[0;32mI (17981) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (18991) challenge_2: Mensaje MQTT enviado, id=23607[0m
+[0;32mI (19071) challenge_2: Lectura TMP36GZ: ADC=209, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (19071) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (20071) challenge_2: Mensaje MQTT enviado, id=42246[0m
+[0;32mI (20151) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (20151) challenge_2: Lectura sensor lluvia: ADC=50, min=0, max=223, Humedad=77.6%[0m
+[0;32mI (20151) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 77.6%, Estado: CRITICAL[0m
+[0;32mI (21161) challenge_2: Mensaje MQTT enviado, id=59311[0m
+[0;32mI (21241) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (21241) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (22241) challenge_2: Mensaje MQTT enviado, id=4612[0m
+[0;32mI (22321) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (22321) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (23321) challenge_2: Mensaje MQTT enviado, id=41355[0m
+[0;32mI (23401) challenge_2: Lectura TMP36GZ: ADC=211, Voltage=0.170V, Temp=6.0°C[0m
+[0;32mI (23401) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=223, Humedad=100.0%[0m
+[0;32mI (23401) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (24411) challenge_2: Mensaje MQTT enviado, id=52671[0m
+[0;32mI (24491) challenge_2: Lectura TMP36GZ: ADC=214, Voltage=0.172V, Temp=6.0°C[0m
+[0;32mI (24491) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (25491) challenge_2: Mensaje MQTT enviado, id=25972[0m
+[0;32mI (25571) challenge_2: Lectura TMP36GZ: ADC=215, Voltage=0.173V, Temp=6.0°C[0m
+[0;32mI (25571) challenge_2: Lectura sensor lluvia: ADC=114, min=0, max=223, Humedad=48.9%[0m
+[0;32mI (25571) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 48.9%, Estado: CRITICAL[0m
+[0;32mI (26581) challenge_2: Mensaje MQTT enviado, id=39617[0m
+[0;32mI (26661) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (26661) challenge_2: Lectura sensor lluvia: ADC=117, min=0, max=223, Humedad=47.5%[0m
+[0;32mI (26661) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 47.5%, Estado: CRITICAL[0m
+[0;32mI (27671) challenge_2: Mensaje MQTT enviado, id=62739[0m
+[0;32mI (27751) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (27751) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=223, Humedad=100.0%[0m
+[0;32mI (27751) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (28761) challenge_2: Mensaje MQTT enviado, id=65348[0m
+[0;32mI (28841) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (28841) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (29651) challenge_2: Otro evento MQTT: 7[0m
+[0;31mE (39661) esp-tls: [sock=57] select() timeout[0m
+[0;31mE (39661) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (39661) mqtt_client: Error transport connect[0m
+[0;32mI (39661) challenge_2: MQTT error[0m
+[0;32mI (39671) challenge_2: MQTT desconectado[0m
+[0;32mI (39671) challenge_2: Mensaje MQTT enviado, id=21419[0m
+[0;32mI (39761) challenge_2: Lectura TMP36GZ: ADC=214, Voltage=0.172V, Temp=6.0°C[0m
+[0;32mI (39761) challenge_2: Lectura sensor lluvia: ADC=106, min=0, max=223, Humedad=52.5%[0m
+[0;32mI (39761) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 52.5%, Estado: CRITICAL[0m
+[0;32mI (40771) challenge_2: Mensaje MQTT enviado, id=37417[0m
+[0;32mI (40851) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (40851) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=223, Humedad=100.0%[0m
+[0;32mI (40851) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (41861) challenge_2: Mensaje MQTT enviado, id=49098[0m
+[0;32mI (41941) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (41941) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (42941) challenge_2: Mensaje MQTT enviado, id=46016[0m
+[0;32mI (43021) challenge_2: Lectura TMP36GZ: ADC=218, Voltage=0.176V, Temp=6.0°C[0m
+[0;32mI (43021) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (44021) challenge_2: Mensaje MQTT enviado, id=31956[0m
+[0;32mI (44101) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (44101) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=226, Humedad=100.0%[0m
+[0;32mI (44101) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (45111) challenge_2: Mensaje MQTT enviado, id=12515[0m
+[0;32mI (45191) challenge_2: Lectura TMP36GZ: ADC=222, Voltage=0.179V, Temp=6.0°C[0m
+[0;32mI (45191) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (46191) challenge_2: Mensaje MQTT enviado, id=60012[0m
+[0;32mI (46271) challenge_2: Lectura TMP36GZ: ADC=221, Voltage=0.178V, Temp=6.0°C[0m
+[0;32mI (46271) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (47271) challenge_2: Mensaje MQTT enviado, id=43166[0m
+[0;32mI (47351) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (47351) challenge_2: Lectura sensor lluvia: ADC=48, min=0, max=226, Humedad=78.8%[0m
+[0;32mI (47351) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 78.8%, Estado: CRITICAL[0m
+[0;32mI (48361) challenge_2: Mensaje MQTT enviado, id=54513[0m
+[0;32mI (48441) challenge_2: Lectura TMP36GZ: ADC=215, Voltage=0.173V, Temp=6.0°C[0m
+[0;32mI (48441) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (49441) challenge_2: Mensaje MQTT enviado, id=37225[0m
+[0;32mI (49521) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (49521) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (50521) challenge_2: Mensaje MQTT enviado, id=18228[0m
+[0;32mI (50601) challenge_2: Lectura TMP36GZ: ADC=216, Voltage=0.174V, Temp=6.0°C[0m
+[0;32mI (50601) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (51601) challenge_2: Mensaje MQTT enviado, id=49864[0m
+[0;32mI (51681) chall

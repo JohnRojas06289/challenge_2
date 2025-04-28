@@ -1,0 +1,295 @@
+[1/11] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jhonr\proyecto-monitoreo-crecidas\build\esp-idf\main && C:\Users\jhonr\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/jhonr/esp/v5.4/esp-idf/components/spiffs/spiffsgen.py 0x80000 C:/Users/jhonr/proyecto-monitoreo-crecidas/spiffs C:/Users/jhonr/proyecto-monitoreo-crecidas/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len"
+[2/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\jhonr\proyecto-monitoreo-crecidas\build\bootloader\esp-idf\esptool_py && C:\Users\jhonr\.espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Users/jhonr/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/jhonr/proyecto-monitoreo-crecidas/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[3/11] No install step for 'bootloader'
+[4/11] Completed 'bootloader'
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/challenge_2.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/challenge_2.c.obj 
+ccache C:\Users\jhonr\.espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.4\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/jhonr/proyecto-monitoreo-crecidas/build/config -IC:/Users/jhonr/proyecto-monitoreo-crecidas/main -IC:/Users/jhonr/esp/v5.4/esp-idf/components/newlib/platform_include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/config/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/config/include/freertos -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/config/xtensa/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -IC:/Users/jhonr/esp/v5.4/esp-idf/components/freertos/esp_additions/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/include/soc -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/include/soc/esp32 -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/dma/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/ldo/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/debug_probe/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/port/esp32/. -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_hw_support/port/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/heap/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/heap/tlsf -IC:/Users/jhonr/esp/v5.4/esp-idf/components/log/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/soc/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/soc/esp32 -IC:/Users/jhonr/esp/v5.4/esp-idf/components/soc/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/soc/esp32/register -IC:/Users/jhonr/esp/v5.4/esp-idf/components/hal/platform_port/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/hal/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/hal/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_rom/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_rom/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_rom/esp32/include/esp32 -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_rom/esp32 -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/soc -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_system/port/include/private -IC:/Users/jhonr/esp/v5.4/esp-idf/components/xtensa/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/xtensa/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/xtensa/deprecated_include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/apps -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/include/apps/sntp -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/lwip/src/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/port/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/port/freertos/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/port/esp32xx/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/Users/jhonr/esp/v5.4/esp-idf/components/lwip/port/esp32xx/include/sys -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mqtt/esp-mqtt/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_event/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/tcp_transport/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp-tls/esp-tls-crypto -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/port/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/mbedtls/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/mbedtls/library -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/Users/jhonr/esp/v5.4/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_timer/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/spiffs/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_partition/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_http_server/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/http_parser -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/include/local -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/wifi_apps/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_phy/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_phy/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_netif/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/nvs_flash/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_driver_gpio/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_adc/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_adc/interface -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_adc/esp32/include -IC:/Users/jhonr/esp/v5.4/esp-idf/components/esp_adc/deprecated/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=C:/Users/jhonr/proyecto-monitoreo-crecidas=. -fmacro-prefix-map=C:/Users/jhonr/esp/v5.4/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/challenge_2.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\challenge_2.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/challenge_2.c.obj -c C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:92:21: error: initializer element is not constant
+   92 |     esp_err_t ret = esp_vfs_spiffs_register(&conf);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:94:5: error: expected identifier or '(' before 'if'
+   94 |     if (ret != ESP_OK) {
+      |     ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:106:5: warning: data definition has no type or storage class
+  106 |     ret = esp_spiffs_info(NULL, &total, &used);
+      |     ^~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:106:5: error: type defaults to 'int' in declaration of 'ret' [-Wimplicit-int]
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:106:5: error: redefinition of 'ret'
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:92:15: note: previous definition of 'ret' with type 'esp_err_t' {aka 'int'}
+   92 |     esp_err_t ret = esp_vfs_spiffs_register(&conf);
+      |               ^~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:106:11: error: initializer element is not constant
+  106 |     ret = esp_spiffs_info(NULL, &total, &used);
+      |           ^~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:107:5: error: expected identifier or '(' before 'if'
+  107 |     if (ret != ESP_OK) {
+      |     ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:109:7: error: expected identifier or '(' before 'else'
+  109 |     } else {
+      |       ^~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:112:1: error: expected identifier or '(' before '}' token
+  112 | }
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:114:37: error: 'event_data' undeclared here (not in a function); did you mean 'current_data'?
+  114 |     esp_mqtt_event_handle_t event = event_data;
+      |                                     ^~~~~~~~~~
+      |                                     current_data
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:116:5: error: expected identifier or '(' before 'switch'
+  116 |     switch (event->event_id) {
+      |     ^~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:149:1: error: expected identifier or '(' before '}' token
+  149 | }
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:153:5: error: expected identifier or '(' before 'if'
+  153 |     if (len >= sizeof(command_copy)) {
+      |     ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:157:5: warning: data definition has no type or storage class
+  157 |     memcpy(command_copy, command, len);
+      |     ^~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:157:5: error: type defaults to 'int' in declaration of 'memcpy' [-Wimplicit-int]
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:157:5: error: parameter names (without types) in function declaration [-Wdeclaration-missing-parameter-type]
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:157:5: error: conflicting types for 'memcpy'; have 'int()'
+In file included from C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_http_server/include/esp_http_server.h:11,
+                 from C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:3:
+C:/Users/jhonr/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h:31:10: note: previous declaration of 'memcpy' with type 'void *(void * restrict,  const void * restrict,  size_t)' {aka 'void *(void * restrict,  const void * restrict,  unsigned int)'}
+   31 | void *   memcpy (void *__restrict, const void *__restrict, size_t);
+      |          ^~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:158:18: error: 'len' undeclared here (not in a function)
+  158 |     command_copy[len] = '\0';
+      |                  ^~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:158:5: warning: data definition has no type or storage class
+  158 |     command_copy[len] = '\0';
+      |     ^~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:158:5: error: type defaults to 'int' in declaration of 'command_copy' [-Wimplicit-int]
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:161:5: error: expected identifier or '(' before 'if'
+  161 |     if (strstr(command_copy, "alarma_off") != NULL) {
+      |     ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:171:5: error: expected identifier or '(' before 'else'
+  171 |     else if (strstr(command_copy, "alarma_on") != NULL) {
+      |     ^~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:183:5: error: expected identifier or '(' before 'else'
+  183 |     else if (strstr(command_copy, "get_data") != NULL) {
+      |     ^~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:197:1: error: expected identifier or '(' before '}' token
+  197 | }
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:199:1: error: expected identifier or '(' before '{' token
+  199 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:219:1: error: expected identifier or '(' before '{' token
+  219 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:235:1: error: expected identifier or '(' before '{' token
+  235 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:512:1: error: expected identifier or '(' before '{' token
+  512 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:557:1: error: expected identifier or '(' before '{' token
+  557 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:589:1: error: expected identifier or '(' before '{' token
+  589 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:629:1: error: expected identifier or '(' before '{' token
+  629 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:671:1: error: expected identifier or '(' before '{' token
+  671 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:730:1: error: expected identifier or '(' before '{' token
+  730 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:823:1: error: expected identifier or '(' before '{' token
+  823 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:857:1: error: expected identifier or '(' before '{' token
+  857 | {
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:871:5: warning: data definition has no type or storage class
+  871 |     wifi_event_group = xEventGroupCreate();
+      |     ^~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:871:5: error: type defaults to 'int' in declaration of 'wifi_event_group' [-Wimplicit-int]
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:871:5: error: conflicting types for 'wifi_event_group'; have 'int'
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:77:27: note: previous declaration of 'wifi_event_group' with type 'EventGroupHandle_t' {aka 'struct EventGroupDef_t *'}
+   77 | static EventGroupHandle_t wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+In file included from C:/Users/jhonr/esp/v5.4/esp-idf/components/spiffs/include/esp_spiffs.h:11,
+                 from C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:1:
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:873:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  873 |     ESP_ERROR_CHECK(nvs_flash_init());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:873:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  873 |     ESP_ERROR_CHECK(nvs_flash_init());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:874:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  874 |     ESP_ERROR_CHECK(esp_netif_init());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:874:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  874 |     ESP_ERROR_CHECK(esp_netif_init());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:875:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  875 |     ESP_ERROR_CHECK(esp_event_loop_create_default());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:875:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  875 |     ESP_ERROR_CHECK(esp_event_loop_create_default());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:876:5: warning: data definition has no type or storage class
+  876 |     esp_netif_create_default_wifi_sta();
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:876:5: error: type defaults to 'int' in declaration of 'esp_netif_create_default_wifi_sta' [-Wimplicit-int]
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:876:5: error: conflicting types for 'esp_netif_create_default_wifi_sta'; have 'int()'
+In file included from C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/include/esp_wifi.h:57,
+                 from C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:4:
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/include/esp_wifi_default.h:95:14: note: previous declaration of 'esp_netif_create_default_wifi_sta' with type 'esp_netif_t *(void)' {aka 'struct esp_netif_obj *(void)'}
+   95 | esp_netif_t* esp_netif_create_default_wifi_sta(void);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/include/esp_wifi.h:302:25: error: initializer element is not constant
+  302 |     .wpa_crypto_funcs = g_wifi_default_wpa_crypto_funcs, \
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:878:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+  878 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_wifi/include/esp_wifi.h:302:25: note: (near initialization for 'cfg.wpa_crypto_funcs')
+  302 |     .wpa_crypto_funcs = g_wifi_default_wpa_crypto_funcs, \
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:878:30: note: in expansion of macro 'WIFI_INIT_CONFIG_DEFAULT'
+  878 |     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:879:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  879 |     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:879:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  879 |     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:883:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  883 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:883:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  883 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(WIFI_EVENT,
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:888:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  888 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:888:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  888 |     ESP_ERROR_CHECK(esp_event_handler_instance_register(IP_EVENT,
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:901:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  901 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:901:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  901 |     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:902:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  902 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:902:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  902 |     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config));
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:115:28: error: expected identifier or '(' before 'do'
+  115 | #define ESP_ERROR_CHECK(x) do {                                         \
+      |                            ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:903:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  903 |     ESP_ERROR_CHECK(esp_wifi_start());
+      |     ^~~~~~~~~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/esp_common/include/esp_err.h:121:7: error: expected identifier or '(' before 'while'
+  121 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:903:5: note: in expansion of macro 'ESP_ERROR_CHECK'
+  903 |     ESP_ERROR_CHECK(esp_wifi_start());
+      |     ^~~~~~~~~~~~~~~
+In file included from C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:2:
+C:/Users/jhonr/esp/v5.4/esp-idf/components/log/include/esp_log.h:204:54: error: expected identifier or '(' before 'do'
+  204 | #define ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) do {               \
+      |                                                      ^~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:905:5: note: in expansion of macro 'ESP_LOGI'
+  905 |     ESP_LOGI(TAG, "Conectando a %s...", wifi_config.sta.ssid);
+      |     ^~~~~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/log/include/esp_log.h:206:7: error: expected identifier or '(' before 'while'
+  206 |     } while(0)
+      |       ^~~~~
+C:/Users/jhonr/esp/v5.4/esp-idf/components/log/include/esp_log.h:114:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  114 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:905:5: note: in expansion of macro 'ESP_LOGI'
+  905 |     ESP_LOGI(TAG, "Conectando a %s...", wifi_config.sta.ssid);
+      |     ^~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:913:5: error: expected identifier or '(' before 'if'
+  913 |     if (bits & CONNECTED_BIT) {
+      |     ^~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:915:7: error: expected identifier or '(' before 'else'
+  915 |     } else {
+      |       ^~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:918:1: error: expected identifier or '(' before '}' token
+  918 | }
+      | ^
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:56:13: warning: 'mqtt_init' used but never defined
+   56 | static void mqtt_init(void);
+      |             ^~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:57:13: warning: 'mqtt_event_handler' declared 'static' but never defined [-Wunused-function]
+   57 | static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data);
+      |             ^~~~~~~~~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:82:34: warning: 'adc1_handle' defined but not used [-Wunused-variable]
+   82 | static adc_oneshot_unit_handle_t adc1_handle;
+      |                                  ^~~~~~~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:78:23: warning: 'server' defined but not used [-Wunused-variable]
+   78 | static httpd_handle_t server = NULL;
+      |                       ^~~~~~
+C:/Users/jhonr/proyecto-monitoreo-crecidas/main/challenge_2.c:68:33: warning: 'mqtt_client' defined but not used [-Wunused-variable]
+   68 | static esp_mqtt_client_handle_t mqtt_client = NULL;
+      |                                 ^~~~~~~~~~~
+ninja: build stopped: subcommand failed.

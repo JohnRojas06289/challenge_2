@@ -1,0 +1,1623 @@
+xxx�x�xY%��ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 26 2025 10:16:45[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000d000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot:  3 storage          Unknown data     01 82 00110000 00080000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2322ch (143916) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=00033254 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (146) esp_image: segment 2: paddr=00033278 vaddr=3ffb0000 size=0404ch ( 16460) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=000372cc vaddr=40080000 size=08d4ch ( 36172) load[0m
+[0;32mI (171) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=abae0h (703200) map[0m
+[0;32mI (411) esp_image: segment 5: paddr=000ebb08 vaddr=40088d4c size=0eca8h ( 60584) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (447) boot: Disabling RNG early entropy source...[0m
+[0;32mI (457) cpu_start: Multicore app[0m
+[0;32mI (465) cpu_start: Pro cpu start user code[0m
+[0;32mI (465) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (466) app_init: Application information:[0m
+[0;32mI (468) app_init: Project name:     challenge_2[0m
+[0;32mI (474) app_init: App version:      28de420-dirty[0m
+[0;32mI (479) app_init: Compile time:     Apr 24 2025 22:10:31[0m
+[0;32mI (485) app_init: ELF file SHA256:  01fb7e42e...[0m
+[0;32mI (490) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (495) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (500) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (505) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (517) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFB9248 len 00026DB8 (155 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (535) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 400979F4 len 0000860C (33 KiB): IRAM[0m
+[0;32mI (549) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (556) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (571) main_task: Started on CPU0[0m
+[0;32mI (581) main_task: Calling app_main()[0m
+[0;32mI (611) challenge_2: Tamaño de la partición: total: 474641, usado: 81324[0m
+[0;32mI (621) challenge_2: Archivo encontrado: historico.html[0m
+[0;32mI (621) challenge_2: Archivo encontrado: index.html[0m
+[0;32mI (621) challenge_2: Archivo encontrado: package.json[0m
+[0;32mI (631) challenge_2: Archivo encontrado: server.js[0m
+[0;32mI (631) challenge_2: Archivo encontrado: CSS/esilos.css[0m
+[0;32mI (641) challenge_2: Archivo encontrado: JS/historico.js[0m
+[0;32mI (651) challenge_2: Archivo encontrado: JS/script.js[0m
+[0;32mI (671) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (671) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (671) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (681) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (691) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (701) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (711) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (721) challenge_2: GPIO e inicialización de sensores completada[0m
+[0;32mI (761) wifi:wifi driver task: 3ffc1bc0, prio:23, stack:6656, core=0[0m
+[0;32mI (771) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (771) wifi:wifi certification version: v7.0[0m
+[0;32mI (771) wifi:config NVS flash: enabled[0m
+[0;32mI (771) wifi:config nano formatting: disabled[0m
+[0;32mI (771) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (781) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (781) wifi:Init management short buffer num: 32[0m
+[0;32mI (791) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (791) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (801) wifi:Init static rx buffer num: 10[0m
+[0;32mI (801) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (801) wifi_init: rx ba win: 6[0m
+[0;32mI (811) wifi_init: accept mbox: 6[0m
+[0;32mI (811) wifi_init: tcpip mbox: 32[0m
+[0;32mI (821) wifi_init: udp mbox: 6[0m
+[0;32mI (821) wifi_init: tcp mbox: 6[0m
+[0;32mI (821) wifi_init: tcp tx win: 5760[0m
+[0;32mI (831) wifi_init: tcp rx win: 5760[0m
+[0;32mI (831) wifi_init: tcp mss: 1440[0m
+[0;32mI (831) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (841) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (851) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (931) wifi:mode : sta (5c:01:3b:65:b7:6c)[0m
+[0;32mI (941) wifi:enable tsf[0m
+[0;32mI (941) challenge_2: Conectando a Realme...[0m
+[0;32mI (951) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (951) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (961) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (971) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (991) wifi:connected with Realme, aid = 1, channel 1, BW20, bssid = ca:c6:fc:bf:31:91[0m
+[0;32mI (991) wifi:security: WPA2-PSK, phy: bgn, rssi: -58[0m
+[0;32mI (991) wifi:pm start, type: 1[0m
+
+[0;32mI (991) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1091) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1091) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2041) esp_netif_handlers: sta ip: 192.168.27.32, mask: 255.255.255.0, gw: 192.168.27.200[0m
+[0;32mI (2041) challenge_2: Conectado con dirección IP: 192.168.27.32[0m
+[0;32mI (2041) challenge_2: Conexión establecida[0m
+[0;32mI (2051) challenge_2: Servidor web iniciado correctamente[0m
+[0;32mI (2051) challenge_2: Otro evento MQTT: 7[0m
+[0;32mI (2091) challenge_2: Sistema inicializado correctamente[0m
+[0;32mI (2091) main_task: Returned from app_main()[0m
+[0;32mI (2141) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (2141) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (2481) challenge_2: MQTT conectado[0m
+[0;32mI (3141) challenge_2: Mensaje MQTT enviado, id=50661[0m
+[0;32mI (3161) wifi:<ba-add>idx:0 (ifx:0, ca:c6:fc:bf:31:91), tid:0, ssn:16, winSize:64[0m
+[0;32mI (3161) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (3221) challenge_2: Lectura TMP36GZ: ADC=247, Voltage=0.199V, Temp=6.0°C[0m
+[0;32mI (3221) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=152, Humedad=100.0%[0m
+[0;32mI (3221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (4231) challenge_2: Mensaje MQTT enviado, id=7214[0m
+[0;32mI (4251) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (4311) challenge_2: Lectura TMP36GZ: ADC=167, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (4311) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=152, Humedad=100.0%[0m
+[0;32mI (4311) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (4771) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (4771) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (5321) challenge_2: Mensaje MQTT enviado, id=59415[0m
+[0;32mI (5341) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (5401) challenge_2: Lectura TMP36GZ: ADC=256, Voltage=0.206V, Temp=6.0°C[0m
+[0;32mI (5401) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=152, Humedad=100.0%[0m
+[0;32mI (5401) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (6411) challenge_2: Mensaje MQTT enviado, id=10969[0m
+[0;32mI (6431) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (6491) challenge_2: Lectura TMP36GZ: ADC=167, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (6491) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (7491) challenge_2: Mensaje MQTT enviado, id=27645[0m
+[0;32mI (7511) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (7581) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (7581) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (7581) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (8601) challenge_2: Mensaje MQTT enviado, id=16487[0m
+[0;32mI (8611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (8681) challenge_2: Lectura TMP36GZ: ADC=227, Voltage=0.183V, Temp=6.0°C[0m
+[0;32mI (8681) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (8681) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (8791) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (8791) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (9691) challenge_2: Mensaje MQTT enviado, id=53480[0m
+[0;32mI (9701) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (9771) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (9771) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (10771) challenge_2: Mensaje MQTT enviado, id=60521[0m
+[0;32mI (10791) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (10851) challenge_2: Lectura TMP36GZ: ADC=213, Voltage=0.172V, Temp=6.0°C[0m
+[0;32mI (10851) challenge_2: Lectura sensor lluvia: ADC=47, min=0, max=194, Humedad=75.8%[0m
+[0;32mI (10851) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 75.8%, Estado: CRITICAL[0m
+[0;32mI (11861) challenge_2: Mensaje MQTT enviado, id=41934[0m
+[0;32mI (11871) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (11941) challenge_2: Lectura TMP36GZ: ADC=167, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (11941) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (12891) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (12891) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (12941) challenge_2: Mensaje MQTT enviado, id=40796[0m
+[0;32mI (12961) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (13031) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (13031) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (13031) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (14041) challenge_2: Mensaje MQTT enviado, id=16870[0m
+[0;32mI (14051) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (14121) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (14121) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (15121) challenge_2: Mensaje MQTT enviado, id=38383[0m
+[0;32mI (15131) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (15201) challenge_2: Lectura TMP36GZ: ADC=265, Voltage=0.214V, Temp=6.0°C[0m
+[0;32mI (15201) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (15201) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (16211) challenge_2: Mensaje MQTT enviado, id=9387[0m
+[0;32mI (16221) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (16291) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (16291) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (16781) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (16781) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (17291) challenge_2: Mensaje MQTT enviado, id=60447[0m
+[0;32mI (17371) challenge_2: Lectura TMP36GZ: ADC=227, Voltage=0.183V, Temp=6.0°C[0m
+[0;32mI (17371) challenge_2: Lectura sensor lluvia: ADC=25, min=0, max=194, Humedad=87.1%[0m
+[0;32mI (17371) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 87.1%, Estado: CRITICAL[0m
+[0;32mI (17421) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (18381) challenge_2: Mensaje MQTT enviado, id=48198[0m
+[0;32mI (18391) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (18461) challenge_2: Lectura TMP36GZ: ADC=155, Voltage=0.125V, Temp=6.0°C[0m
+[0;32mI (18461) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (19461) challenge_2: Mensaje MQTT enviado, id=48132[0m
+[0;32mI (19471) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (19541) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (19541) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (20541) challenge_2: Mensaje MQTT enviado, id=33455[0m
+[0;32mI (20561) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (20621) challenge_2: Lectura TMP36GZ: ADC=238, Voltage=0.192V, Temp=6.0°C[0m
+[0;32mI (20621) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (20621) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (20871) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (20871) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (21631) challenge_2: Mensaje MQTT enviado, id=13871[0m
+[0;32mI (21651) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (21711) challenge_2: Lectura TMP36GZ: ADC=186, Voltage=0.150V, Temp=6.0°C[0m
+[0;32mI (21711) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (22721) challenge_2: Mensaje MQTT enviado, id=1172[0m
+[0;32mI (22801) challenge_2: Lectura TMP36GZ: ADC=155, Voltage=0.125V, Temp=6.0°C[0m
+[0;32mI (22801) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (22801) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (23021) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (23811) challenge_2: Mensaje MQTT enviado, id=1860[0m
+[0;32mI (23831) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (23891) challenge_2: Lectura TMP36GZ: ADC=242, Voltage=0.195V, Temp=6.0°C[0m
+[0;32mI (23891) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (23891) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (24761) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (24761) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (24901) challenge_2: Mensaje MQTT enviado, id=22376[0m
+[0;32mI (24921) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (24981) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (24981) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (25981) challenge_2: Mensaje MQTT enviado, id=22682[0m
+[0;32mI (25991) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (26061) challenge_2: Lectura TMP36GZ: ADC=241, Voltage=0.194V, Temp=6.0°C[0m
+[0;32mI (26061) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (26061) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (27071) challenge_2: Mensaje MQTT enviado, id=10358[0m
+[0;32mI (27081) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (27151) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (27151) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (28151) challenge_2: Mensaje MQTT enviado, id=52321[0m
+[0;32mI (28171) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (28231) challenge_2: Lectura TMP36GZ: ADC=238, Voltage=0.192V, Temp=6.0°C[0m
+[0;32mI (28231) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (28231) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (28871) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (28871) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (29241) challenge_2: Mensaje MQTT enviado, id=44545[0m
+[0;32mI (29261) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (29321) challenge_2: Lectura TMP36GZ: ADC=155, Voltage=0.125V, Temp=6.0°C[0m
+[0;32mI (29321) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (30321) challenge_2: Mensaje MQTT enviado, id=45344[0m
+[0;32mI (30331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (30401) challenge_2: Lectura TMP36GZ: ADC=232, Voltage=0.187V, Temp=6.0°C[0m
+[0;32mI (30401) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (30401) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (31411) challenge_2: Mensaje MQTT enviado, id=18600[0m
+[0;32mI (31421) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (31491) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (31491) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (32491) challenge_2: Mensaje MQTT enviado, id=57591[0m
+[0;32mI (32511) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (32571) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (32571) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (32991) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (32991) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (33571) challenge_2: Mensaje MQTT enviado, id=20684[0m
+[0;32mI (33581) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (33651) challenge_2: Lectura TMP36GZ: ADC=233, Voltage=0.188V, Temp=6.0°C[0m
+[0;32mI (33651) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (33651) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (34661) challenge_2: Mensaje MQTT enviado, id=7266[0m
+[0;32mI (34681) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (34741) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (34741) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (35741) challenge_2: Mensaje MQTT enviado, id=13664[0m
+[0;32mI (35761) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (35821) challenge_2: Lectura TMP36GZ: ADC=231, Voltage=0.186V, Temp=6.0°C[0m
+[0;32mI (35821) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (35821) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (36841) challenge_2: Mensaje MQTT enviado, id=13090[0m
+[0;32mI (36851) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (36921) challenge_2: Lectura TMP36GZ: ADC=248, Voltage=0.200V, Temp=6.0°C[0m
+[0;32mI (36921) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (36921) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (36941) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (36941) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (37951) challenge_2: Mensaje MQTT enviado, id=57709[0m
+[0;32mI (37971) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (38031) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (38031) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (39031) challenge_2: Mensaje MQTT enviado, id=10588[0m
+[0;32mI (39051) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (39111) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (39111) challenge_2: Lectura sensor lluvia: ADC=88, min=0, max=194, Humedad=54.6%[0m
+[0;32mI (39111) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 54.6%, Estado: CRITICAL[0m
+[0;32mI (40121) challenge_2: Mensaje MQTT enviado, id=65364[0m
+[0;32mI (40131) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (40201) challenge_2: Lectura TMP36GZ: ADC=151, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (40201) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (41201) challenge_2: Mensaje MQTT enviado, id=7254[0m
+[0;32mI (41221) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (41281) challenge_2: Lectura TMP36GZ: ADC=173, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (41281) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (41771) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (41771) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (42281) challenge_2: Mensaje MQTT enviado, id=4287[0m
+[0;32mI (42301) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (42361) challenge_2: Lectura TMP36GZ: ADC=222, Voltage=0.179V, Temp=6.0°C[0m
+[0;32mI (42361) challenge_2: Lectura sensor lluvia: ADC=7, min=0, max=194, Humedad=96.4%[0m
+[0;32mI (42361) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 96.4%, Estado: CRITICAL[0m
+[0;32mI (43371) challenge_2: Mensaje MQTT enviado, id=15300[0m
+[0;32mI (43391) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (43451) challenge_2: Lectura TMP36GZ: ADC=149, Voltage=0.120V, Temp=6.0°C[0m
+[0;32mI (43451) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (44451) challenge_2: Mensaje MQTT enviado, id=15767[0m
+[0;32mI (44531) challenge_2: Lectura TMP36GZ: ADC=175, Voltage=0.141V, Temp=6.0°C[0m
+[0;32mI (44531) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (44821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (45531) challenge_2: Mensaje MQTT enviado, id=13414[0m
+[0;32mI (45551) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (45611) challenge_2: Lectura TMP36GZ: ADC=241, Voltage=0.194V, Temp=6.0°C[0m
+[0;32mI (45611) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (45611) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (46461) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (46461) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (46621) challenge_2: Mensaje MQTT enviado, id=8189[0m
+[0;32mI (46641) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (46701) challenge_2: Lectura TMP36GZ: ADC=140, Voltage=0.113V, Temp=6.0°C[0m
+[0;32mI (46701) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (47701) challenge_2: Mensaje MQTT enviado, id=21891[0m
+[0;32mI (47721) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (47781) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (47781) challenge_2: Lectura sensor lluvia: ADC=89, min=0, max=194, Humedad=54.1%[0m
+[0;32mI (47781) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 54.1%, Estado: CRITICAL[0m
+[0;32mI (48791) challenge_2: Mensaje MQTT enviado, id=18212[0m
+[0;32mI (48811) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (48871) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (48871) challenge_2: Lectura sensor lluvia: ADC=70, min=0, max=194, Humedad=63.9%[0m
+[0;32mI (48871) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 63.9%, Estado: CRITICAL[0m
+[0;32mI (49881) challenge_2: Mensaje MQTT enviado, id=9053[0m
+[0;32mI (49901) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (49961) challenge_2: Lectura TMP36GZ: ADC=241, Voltage=0.194V, Temp=6.0°C[0m
+[0;32mI (49961) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (49961) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (50971) challenge_2: Mensaje MQTT enviado, id=38954[0m
+[0;32mI (50981) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (51051) challenge_2: Lectura TMP36GZ: ADC=163, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (51051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (52051) challenge_2: Mensaje MQTT enviado, id=9495[0m
+[0;32mI (52071) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (52131) challenge_2: Lectura TMP36GZ: ADC=225, Voltage=0.181V, Temp=6.0°C[0m
+[0;32mI (52131) challenge_2: Lectura sensor lluvia: ADC=48, min=0, max=194, Humedad=75.3%[0m
+[0;32mI (52131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 75.3%, Estado: CRITICAL[0m
+[0;32mI (53141) challenge_2: Mensaje MQTT enviado, id=18991[0m
+[0;32mI (53151) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (53221) challenge_2: Lectura TMP36GZ: ADC=158, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (53221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (53851) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (53851) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (54221) challenge_2: Mensaje MQTT enviado, id=33192[0m
+[0;32mI (54241) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (54301) challenge_2: Lectura TMP36GZ: ADC=160, Voltage=0.129V, Temp=6.0°C[0m
+[0;32mI (54301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (55301) challenge_2: Mensaje MQTT enviado, id=11147[0m
+[0;32mI (55321) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (55381) challenge_2: Lectura TMP36GZ: ADC=228, Voltage=0.184V, Temp=6.0°C[0m
+[0;32mI (55381) challenge_2: Lectura sensor lluvia: ADC=38, min=0, max=194, Humedad=80.4%[0m
+[0;32mI (55381) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 80.4%, Estado: CRITICAL[0m
+[0;32mI (56391) challenge_2: Mensaje MQTT enviado, id=35289[0m
+[0;32mI (56401) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (56471) challenge_2: Lectura TMP36GZ: ADC=160, Voltage=0.129V, Temp=6.0°C[0m
+[0;32mI (56471) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (57471) challenge_2: Mensaje MQTT enviado, id=269[0m
+[0;32mI (57491) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (57551) challenge_2: Lectura TMP36GZ: ADC=169, Voltage=0.136V, Temp=6.0°C[0m
+[0;32mI (57551) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (58551) challenge_2: Mensaje MQTT enviado, id=18053[0m
+[0;32mI (58571) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (58631) challenge_2: Lectura TMP36GZ: ADC=236, Voltage=0.190V, Temp=6.0°C[0m
+[0;32mI (58631) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (58631) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (59371) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (59371) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (59641) challenge_2: Mensaje MQTT enviado, id=27508[0m
+[0;32mI (59651) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (59721) challenge_2: Lectura TMP36GZ: ADC=142, Voltage=0.114V, Temp=6.0°C[0m
+[0;32mI (59721) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (60721) challenge_2: Mensaje MQTT enviado, id=35014[0m
+[0;32mI (60741) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (60801) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (60801) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (61801) challenge_2: Mensaje MQTT enviado, id=12002[0m
+[0;32mI (61821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (61881) challenge_2: Lectura TMP36GZ: ADC=237, Voltage=0.191V, Temp=6.0°C[0m
+[0;32mI (61881) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (61881) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (62891) challenge_2: Mensaje MQTT enviado, id=35107[0m
+[0;32mI (62911) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (62971) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (62971) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (63971) challenge_2: Mensaje MQTT enviado, id=2775[0m
+[0;32mI (64051) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (64051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (64911) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (64911) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (65051) challenge_2: Mensaje MQTT enviado, id=62112[0m
+[0;32mI (65131) challenge_2: Lectura TMP36GZ: ADC=214, Voltage=0.172V, Temp=6.0°C[0m
+[0;32mI (65131) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (65131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (65331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (65341) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (66141) challenge_2: Mensaje MQTT enviado, id=15846[0m
+[0;32mI (66211) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (66221) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (66221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (67221) challenge_2: Mensaje MQTT enviado, id=43762[0m
+[0;32mI (67301) challenge_2: Lectura TMP36GZ: ADC=154, Voltage=0.124V, Temp=6.0°C[0m
+[0;32mI (67301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (68301) challenge_2: Mensaje MQTT enviado, id=53299[0m
+[0;32mI (68331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (68381) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (68381) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (68381) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (68581) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (69391) challenge_2: Mensaje MQTT enviado, id=13428[0m
+[0;32mI (69471) challenge_2: Lectura TMP36GZ: ADC=147, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (69471) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (70471) challenge_2: Mensaje MQTT enviado, id=45650[0m
+[0;32mI (70551) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (70551) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (70831) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (70841) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (71551) challenge_2: Mensaje MQTT enviado, id=45194[0m
+[0;32mI (71561) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (71631) challenge_2: Lectura TMP36GZ: ADC=234, Voltage=0.189V, Temp=6.0°C[0m
+[0;32mI (71631) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (71631) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (71891) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (71891) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (72641) challenge_2: Mensaje MQTT enviado, id=21639[0m
+[0;32mI (72721) challenge_2: Lectura TMP36GZ: ADC=145, Voltage=0.117V, Temp=6.0°C[0m
+[0;32mI (72721) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (73721) challenge_2: Mensaje MQTT enviado, id=55757[0m
+[0;32mI (73801) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (73801) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (74101) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (74801) challenge_2: Mensaje MQTT enviado, id=48779[0m
+[0;32mI (74881) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (74881) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (74881) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (75541) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (75551) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (75891) challenge_2: Mensaje MQTT enviado, id=52165[0m
+[0;32mI (75901) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (75971) challenge_2: Lectura TMP36GZ: ADC=142, Voltage=0.114V, Temp=6.0°C[0m
+[0;32mI (75971) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (76971) challenge_2: Mensaje MQTT enviado, id=43088[0m
+[0;32mI (76991) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (77051) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (77051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (78051) challenge_2: Mensaje MQTT enviado, id=25042[0m
+[0;32mI (78131) challenge_2: Lectura TMP36GZ: ADC=231, Voltage=0.186V, Temp=6.0°C[0m
+[0;32mI (78131) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (78131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (78821) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (78821) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (79141) challenge_2: Mensaje MQTT enviado, id=62385[0m
+[0;32mI (79221) challenge_2: Lectura TMP36GZ: ADC=168, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (79221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (79431) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (79471) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (80221) challenge_2: Mensaje MQTT enviado, id=11586[0m
+[0;32mI (80301) challenge_2: Lectura TMP36GZ: ADC=188, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (80301) challenge_2: Lectura sensor lluvia: ADC=66, min=0, max=194, Humedad=66.0%[0m
+[0;32mI (80301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 66.0%, Estado: CRITICAL[0m
+[0;32mI (81311) challenge_2: Mensaje MQTT enviado, id=58166[0m
+[0;32mI (81391) challenge_2: Lectura TMP36GZ: ADC=156, Voltage=0.126V, Temp=6.0°C[0m
+[0;32mI (81391) challenge_2: Lectura sensor lluvia: ADC=83, min=0, max=194, Humedad=57.2%[0m
+[0;32mI (81391) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 57.2%, Estado: CRITICAL[0m
+[0;32mI (81681) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (81691) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (82401) challenge_2: Mensaje MQTT enviado, id=12255[0m
+[0;32mI (82481) challenge_2: Lectura TMP36GZ: ADC=231, Voltage=0.186V, Temp=6.0°C[0m
+[0;32mI (82481) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (82481) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (82491) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (83501) challenge_2: Mensaje MQTT enviado, id=8325[0m
+[0;32mI (83581) challenge_2: Lectura TMP36GZ: ADC=210, Voltage=0.169V, Temp=6.0°C[0m
+[0;32mI (83581) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (83581) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (83741) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (84591) challenge_2: Mensaje MQTT enviado, id=18756[0m
+[0;32mI (84611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (84671) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (84671) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (85671) challenge_2: Mensaje MQTT enviado, id=8569[0m
+[0;32mI (85681) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (85751) challenge_2: Lectura TMP36GZ: ADC=236, Voltage=0.190V, Temp=6.0°C[0m
+[0;32mI (85751) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (85751) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (86761) challenge_2: Mensaje MQTT enviado, id=16483[0m
+[0;32mI (86771) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (86841) challenge_2: Lectura TMP36GZ: ADC=149, Voltage=0.120V, Temp=6.0°C[0m
+[0;32mI (86841) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (87221) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (87221) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (87841) challenge_2: Mensaje MQTT enviado, id=60593[0m
+[0;32mI (87921) challenge_2: Lectura TMP36GZ: ADC=210, Voltage=0.169V, Temp=6.0°C[0m
+[0;32mI (87921) challenge_2: Lectura sensor lluvia: ADC=29, min=0, max=194, Humedad=85.1%[0m
+[0;32mI (87921) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 85.1%, Estado: CRITICAL[0m
+[0;32mI (88931) challenge_2: Mensaje MQTT enviado, id=28397[0m
+[0;32mI (89011) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (89011) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (89321) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (89351) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (90011) challenge_2: Mensaje MQTT enviado, id=47111[0m
+[0;32mI (90091) challenge_2: Lectura TMP36GZ: ADC=162, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (90091) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (91091) challenge_2: Mensaje MQTT enviado, id=50945[0m
+[0;32mI (91171) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (91171) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (91171) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (92181) challenge_2: Mensaje MQTT enviado, id=35334[0m
+[0;32mI (92261) challenge_2: Lectura TMP36GZ: ADC=176, Voltage=0.142V, Temp=6.0°C[0m
+[0;32mI (92261) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (93171) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (93171) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (93261) challenge_2: Mensaje MQTT enviado, id=42082[0m
+[0;32mI (93341) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (93341) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (94341) challenge_2: Mensaje MQTT enviado, id=64216[0m
+[0;32mI (94421) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (94421) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (94421) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (94581) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (94611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (94821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (94831) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (94831) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (95431) challenge_2: Mensaje MQTT enviado, id=51266[0m
+[0;32mI (95441) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (95511) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (95511) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (96511) challenge_2: Mensaje MQTT enviado, id=43052[0m
+[0;32mI (96521) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (96591) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (96591) challenge_2: Lectura sensor lluvia: ADC=33, min=0, max=194, Humedad=83.0%[0m
+[0;32mI (96591) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 83.0%, Estado: CRITICAL[0m
+[0;32mI (97601) challenge_2: Mensaje MQTT enviado, id=40648[0m
+[0;32mI (97611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (97681) challenge_2: Lectura TMP36GZ: ADC=146, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (97681) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (98681) challenge_2: Mensaje MQTT enviado, id=63926[0m
+[0;32mI (98691) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (98761) challenge_2: Lectura TMP36GZ: ADC=175, Voltage=0.141V, Temp=6.0°C[0m
+[0;32mI (98761) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (99721) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (99721) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (99761) challenge_2: Mensaje MQTT enviado, id=42036[0m
+[0;32mI (99771) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (99841) challenge_2: Lectura TMP36GZ: ADC=214, Voltage=0.172V, Temp=6.0°C[0m
+[0;32mI (99841) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (99841) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (100861) challenge_2: Mensaje MQTT enviado, id=35742[0m
+[0;32mI (100871) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (100941) challenge_2: Lectura TMP36GZ: ADC=232, Voltage=0.187V, Temp=6.0°C[0m
+[0;32mI (100941) challenge_2: Lectura sensor lluvia: ADC=3, min=0, max=194, Humedad=98.5%[0m
+[0;32mI (100941) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 98.5%, Estado: CRITICAL[0m
+[0;32mI (101951) challenge_2: Mensaje MQTT enviado, id=55875[0m
+[0;32mI (101971) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (102031) challenge_2: Lectura TMP36GZ: ADC=167, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (102031) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (103031) challenge_2: Mensaje MQTT enviado, id=26983[0m
+[0;32mI (103041) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (103111) challenge_2: Lectura TMP36GZ: ADC=164, Voltage=0.132V, Temp=6.0°C[0m
+[0;32mI (103111) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (104111) challenge_2: Mensaje MQTT enviado, id=29741[0m
+[0;32mI (104121) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (104191) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (104191) challenge_2: Lectura sensor lluvia: ADC=65, min=0, max=194, Humedad=66.5%[0m
+[0;32mI (104191) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 66.5%, Estado: CRITICAL[0m
+[0;32mI (105201) challenge_2: Mensaje MQTT enviado, id=22550[0m
+[0;32mI (105211) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (105281) challenge_2: Lectura TMP36GZ: ADC=160, Voltage=0.129V, Temp=6.0°C[0m
+[0;32mI (105281) challenge_2: Lectura sensor lluvia: ADC=18, min=0, max=194, Humedad=90.7%[0m
+[0;32mI (105281) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 90.7%, Estado: CRITICAL[0m
+[0;32mI (106291) challenge_2: Mensaje MQTT enviado, id=59806[0m
+[0;32mI (106301) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (106371) challenge_2: Lectura TMP36GZ: ADC=228, Voltage=0.184V, Temp=6.0°C[0m
+[0;32mI (106371) challenge_2: Lectura sensor lluvia: ADC=5, min=0, max=194, Humedad=97.4%[0m
+[0;32mI (106371) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 97.4%, Estado: CRITICAL[0m
+[0;32mI (107381) challenge_2: Mensaje MQTT enviado, id=61536[0m
+[0;32mI (107461) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (107461) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (107471) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (107721) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (107721) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (108461) challenge_2: Mensaje MQTT enviado, id=26038[0m
+[0;32mI (108481) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (108541) challenge_2: Lectura TMP36GZ: ADC=142, Voltage=0.114V, Temp=6.0°C[0m
+[0;32mI (108541) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (109541) challenge_2: Mensaje MQTT enviado, id=18586[0m
+[0;32mI (109551) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (109621) challenge_2: Lectura TMP36GZ: ADC=170, Voltage=0.137V, Temp=6.0°C[0m
+[0;32mI (109621) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (110621) challenge_2: Mensaje MQTT enviado, id=16625[0m
+[0;32mI (110631) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (110701) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (110701) challenge_2: Lectura sensor lluvia: ADC=81, min=0, max=194, Humedad=58.2%[0m
+[0;32mI (110701) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 58.2%, Estado: CRITICAL[0m
+[0;32mI (111711) challenge_2: Mensaje MQTT enviado, id=12031[0m
+[0;32mI (111731) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (111791) challenge_2: Lectura TMP36GZ: ADC=155, Voltage=0.125V, Temp=6.0°C[0m
+[0;32mI (111791) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (111791) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (112801) challenge_2: Mensaje MQTT enviado, id=33369[0m
+[0;32mI (112821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (112881) challenge_2: Lectura TMP36GZ: ADC=242, Voltage=0.195V, Temp=6.0°C[0m
+[0;32mI (112881) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (112881) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (113891) challenge_2: Mensaje MQTT enviado, id=24995[0m
+[0;32mI (113901) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (113971) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (113971) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (114461) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (114461) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (114971) challenge_2: Mensaje MQTT enviado, id=45864[0m
+[0;32mI (114991) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (115051) challenge_2: Lectura TMP36GZ: ADC=172, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (115051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (116051) challenge_2: Mensaje MQTT enviado, id=65462[0m
+[0;32mI (116071) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (116131) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (116131) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (116131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (117141) challenge_2: Mensaje MQTT enviado, id=2032[0m
+[0;32mI (117161) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (117221) challenge_2: Lectura TMP36GZ: ADC=136, Voltage=0.110V, Temp=6.0°C[0m
+[0;32mI (117221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (118221) challenge_2: Mensaje MQTT enviado, id=21364[0m
+[0;32mI (118241) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (118301) challenge_2: Lectura TMP36GZ: ADC=165, Voltage=0.133V, Temp=6.0°C[0m
+[0;32mI (118301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (119301) challenge_2: Mensaje MQTT enviado, id=20815[0m
+[0;32mI (119321) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (119381) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (119381) challenge_2: Lectura sensor lluvia: ADC=30, min=0, max=194, Humedad=84.5%[0m
+[0;32mI (119381) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 84.5%, Estado: CRITICAL[0m
+[0;33mW (120201) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (120201) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (120391) challenge_2: Mensaje MQTT enviado, id=13533[0m
+[0;32mI (120411) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (120471) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (120471) challenge_2: Lectura sensor lluvia: ADC=80, min=0, max=194, Humedad=58.8%[0m
+[0;32mI (120471) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 58.8%, Estado: CRITICAL[0m
+[0;32mI (121481) challenge_2: Mensaje MQTT enviado, id=58841[0m
+[0;32mI (121501) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (121561) challenge_2: Lectura TMP36GZ: ADC=229, Voltage=0.185V, Temp=6.0°C[0m
+[0;32mI (121561) challenge_2: Lectura sensor lluvia: ADC=73, min=0, max=194, Humedad=62.4%[0m
+[0;32mI (121561) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 62.4%, Estado: CRITICAL[0m
+[0;32mI (122571) challenge_2: Mensaje MQTT enviado, id=37787[0m
+[0;32mI (122591) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (122651) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (122651) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (123651) challenge_2: Mensaje MQTT enviado, id=54043[0m
+[0;32mI (123661) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (123731) challenge_2: Lectura TMP36GZ: ADC=197, Voltage=0.159V, Temp=6.0°C[0m
+[0;32mI (123731) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (124731) challenge_2: Mensaje MQTT enviado, id=28836[0m
+[0;32mI (124751) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (124811) challenge_2: Lectura TMP36GZ: ADC=234, Voltage=0.189V, Temp=6.0°C[0m
+[0;32mI (124811) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (125811) challenge_2: Mensaje MQTT enviado, id=5441[0m
+[0;32mI (125821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (125891) challenge_2: Lectura TMP36GZ: ADC=223, Voltage=0.180V, Temp=6.0°C[0m
+[0;32mI (125891) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (125891) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (126901) challenge_2: Mensaje MQTT enviado, id=25946[0m
+[0;32mI (126921) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (126981) challenge_2: Lectura TMP36GZ: ADC=178, Voltage=0.143V, Temp=6.0°C[0m
+[0;32mI (126981) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (127981) challenge_2: Mensaje MQTT enviado, id=60795[0m
+[0;33mW (128011) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (128011) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (128021) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (128071) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (128071) challenge_2: Lectura sensor lluvia: ADC=13, min=0, max=194, Humedad=93.3%[0m
+[0;32mI (128081) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 93.3%, Estado: CRITICAL[0m
+[0;32mI (129091) challenge_2: Mensaje MQTT enviado, id=40945[0m
+[0;32mI (129101) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (129171) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (129171) challenge_2: Lectura sensor lluvia: ADC=9, min=0, max=194, Humedad=95.4%[0m
+[0;32mI (129171) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 95.4%, Estado: CRITICAL[0m
+[0;32mI (130181) challenge_2: Mensaje MQTT enviado, id=36087[0m
+[0;32mI (130191) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (130261) challenge_2: Lectura TMP36GZ: ADC=229, Voltage=0.185V, Temp=6.0°C[0m
+[0;32mI (130261) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (130261) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (131271) challenge_2: Mensaje MQTT enviado, id=22798[0m
+[0;32mI (131291) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (131351) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (131351) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (132351) challenge_2: Mensaje MQTT enviado, id=25632[0m
+[0;32mI (132371) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (132431) challenge_2: Lectura TMP36GZ: ADC=219, Voltage=0.176V, Temp=6.0°C[0m
+[0;32mI (132431) challenge_2: Lectura sensor lluvia: ADC=23, min=0, max=194, Humedad=88.1%[0m
+[0;32mI (132431) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 88.1%, Estado: CRITICAL[0m
+[0;32mI (133441) challenge_2: Mensaje MQTT enviado, id=15568[0m
+[0;32mI (133451) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (133521) challenge_2: Lectura TMP36GZ: ADC=138, Voltage=0.111V, Temp=6.0°C[0m
+[0;32mI (133521) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (133711) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (133721) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (134521) challenge_2: Mensaje MQTT enviado, id=4844[0m
+[0;32mI (134531) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (134601) challenge_2: Lectura TMP36GZ: ADC=174, Voltage=0.140V, Temp=6.0°C[0m
+[0;32mI (134601) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (135601) challenge_2: Mensaje MQTT enviado, id=53813[0m
+[0;32mI (135611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (135681) challenge_2: Lectura TMP36GZ: ADC=235, Voltage=0.189V, Temp=6.0°C[0m
+[0;32mI (135681) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (135681) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (136691) challenge_2: Mensaje MQTT enviado, id=60295[0m
+[0;32mI (136711) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (136771) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (136771) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (137771) challenge_2: Mensaje MQTT enviado, id=58775[0m
+[0;32mI (137791) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (137851) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (137851) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (137851) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (138861) challenge_2: Mensaje MQTT enviado, id=30854[0m
+[0;32mI (138941) challenge_2: Lectura TMP36GZ: ADC=165, Voltage=0.133V, Temp=6.0°C[0m
+[0;32mI (138941) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (139041) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (139861) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (139861) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (139941) challenge_2: Mensaje MQTT enviado, id=33281[0m
+[0;32mI (139951) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (140021) challenge_2: Lectura TMP36GZ: ADC=206, Voltage=0.166V, Temp=6.0°C[0m
+[0;32mI (140021) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (140021) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (141031) challenge_2: Mensaje MQTT enviado, id=40564[0m
+[0;32mI (141051) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (141111) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (141111) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (142111) challenge_2: Mensaje MQTT enviado, id=9324[0m
+[0;32mI (142121) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (142191) challenge_2: Lectura TMP36GZ: ADC=222, Voltage=0.179V, Temp=6.0°C[0m
+[0;32mI (142191) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (142191) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (143201) challenge_2: Mensaje MQTT enviado, id=14669[0m
+[0;32mI (143211) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (143281) challenge_2: Lectura TMP36GZ: ADC=148, Voltage=0.119V, Temp=6.0°C[0m
+[0;32mI (143281) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (144281) challenge_2: Mensaje MQTT enviado, id=40710[0m
+[0;32mI (144361) challenge_2: Lectura TMP36GZ: ADC=221, Voltage=0.178V, Temp=6.0°C[0m
+[0;32mI (144361) challenge_2: Lectura sensor lluvia: ADC=14, min=0, max=194, Humedad=92.8%[0m
+[0;32mI (144361) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 92.8%, Estado: CRITICAL[0m
+[0;32mI (144561) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (145371) challenge_2: Mensaje MQTT enviado, id=39381[0m
+[0;32mI (145391) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (145451) challenge_2: Lectura TMP36GZ: ADC=151, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (145451) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (146201) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (146201) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (146451) challenge_2: Mensaje MQTT enviado, id=37442[0m
+[0;32mI (146461) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (146531) challenge_2: Lectura TMP36GZ: ADC=195, Voltage=0.157V, Temp=6.0°C[0m
+[0;32mI (146531) challenge_2: Lectura sensor lluvia: ADC=53, min=0, max=194, Humedad=72.7%[0m
+[0;32mI (146531) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 72.7%, Estado: CRITICAL[0m
+[0;32mI (147541) challenge_2: Mensaje MQTT enviado, id=64382[0m
+[0;32mI (147561) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (147621) challenge_2: Lectura TMP36GZ: ADC=147, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (147621) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (148621) challenge_2: Mensaje MQTT enviado, id=16204[0m
+[0;32mI (148631) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (148701) challenge_2: Lectura TMP36GZ: ADC=177, Voltage=0.143V, Temp=6.0°C[0m
+[0;32mI (148701) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (149701) challenge_2: Mensaje MQTT enviado, id=42839[0m
+[0;32mI (149781) challenge_2: Lectura TMP36GZ: ADC=231, Voltage=0.186V, Temp=6.0°C[0m
+[0;32mI (149781) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (149781) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (150091) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (150791) challenge_2: Mensaje MQTT enviado, id=37645[0m
+[0;32mI (150801) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (150871) challenge_2: Lectura TMP36GZ: ADC=157, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (150871) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (151871) challenge_2: Mensaje MQTT enviado, id=21641[0m
+[0;32mI (151881) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (151951) challenge_2: Lectura TMP36GZ: ADC=237, Voltage=0.191V, Temp=6.0°C[0m
+[0;32mI (151951) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=194, Humedad=100.0%[0m
+[0;32mI (151951) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (152961) challenge_2: Mensaje MQTT enviado, id=35223[0m
+[0;32mI (152971) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (153041) challenge_2: Lectura TMP36GZ: ADC=154, Voltage=0.124V, Temp=6.0°C[0m
+[0;32mI (153041) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (154041) challenge_2: Mensaje MQTT enviado, id=34879[0m
+[0;32mI (154061) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (154061) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (154061) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (154121) challenge_2: Lectura TMP36GZ: ADC=229, Voltage=0.185V, Temp=6.0°C[0m
+[0;32mI (154121) challenge_2: Lectura sensor lluvia: ADC=16, min=0, max=208, Humedad=92.3%[0m
+[0;32mI (154121) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 92.3%, Estado: CRITICAL[0m
+[0;32mI (155131) challenge_2: Mensaje MQTT enviado, id=65126[0m
+[0;32mI (155151) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (155211) challenge_2: Lectura TMP36GZ: ADC=145, Voltage=0.117V, Temp=6.0°C[0m
+[0;32mI (155211) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (156211) challenge_2: Mensaje MQTT enviado, id=47897[0m
+[0;32mI (156261) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (156291) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (156291) challenge_2: Lectura sensor lluvia: ADC=38, min=0, max=208, Humedad=81.7%[0m
+[0;32mI (156291) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 81.7%, Estado: CRITICAL[0m
+[0;32mI (157301) challenge_2: Mensaje MQTT enviado, id=29591[0m
+[0;32mI (157321) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (157381) challenge_2: Lectura TMP36GZ: ADC=148, Voltage=0.119V, Temp=6.0°C[0m
+[0;32mI (157381) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (158381) challenge_2: Mensaje MQTT enviado, id=15151[0m
+[0;32mI (158391) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (158461) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (158461) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (159461) challenge_2: Mensaje MQTT enviado, id=40850[0m
+[0;32mI (159471) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (159541) challenge_2: Lectura TMP36GZ: ADC=232, Voltage=0.187V, Temp=6.0°C[0m
+[0;32mI (159541) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (159541) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (160551) challenge_2: Mensaje MQTT enviado, id=55675[0m
+[0;32mI (160561) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (160631) challenge_2: Lectura TMP36GZ: ADC=162, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (160631) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (161631) challenge_2: Mensaje MQTT enviado, id=54342[0m
+[0;32mI (161641) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (161711) challenge_2: Lectura TMP36GZ: ADC=228, Voltage=0.184V, Temp=6.0°C[0m
+[0;32mI (161711) challenge_2: Lectura sensor lluvia: ADC=6, min=0, max=208, Humedad=97.1%[0m
+[0;32mI (161711) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 97.1%, Estado: CRITICAL[0m
+[0;33mW (161971) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (161971) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (162721) challenge_2: Mensaje MQTT enviado, id=25109[0m
+[0;32mI (162731) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (162801) challenge_2: Lectura TMP36GZ: ADC=143, Voltage=0.115V, Temp=6.0°C[0m
+[0;32mI (162801) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (163801) challenge_2: Mensaje MQTT enviado, id=40288[0m
+[0;32mI (163881) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (163881) challenge_2: Lectura sensor lluvia: ADC=80, min=0, max=208, Humedad=61.5%[0m
+[0;32mI (163881) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (163891) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 61.5%, Estado: CRITICAL[0m
+[0;32mI (164901) challenge_2: Mensaje MQTT enviado, id=10051[0m
+[0;32mI (164911) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (164981) challenge_2: Lectura TMP36GZ: ADC=216, Voltage=0.174V, Temp=6.0°C[0m
+[0;32mI (164981) challenge_2: Lectura sensor lluvia: ADC=45, min=0, max=208, Humedad=78.4%[0m
+[0;32mI (164981) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 78.4%, Estado: CRITICAL[0m
+[0;32mI (165991) challenge_2: Mensaje MQTT enviado, id=61856[0m
+[0;32mI (166001) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (166071) challenge_2: Lectura TMP36GZ: ADC=149, Voltage=0.120V, Temp=6.0°C[0m
+[0;32mI (166071) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (167071) challenge_2: Mensaje MQTT enviado, id=25268[0m
+[0;32mI (167081) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (167151) challenge_2: Lectura TMP36GZ: ADC=185, Voltage=0.149V, Temp=6.0°C[0m
+[0;32mI (167151) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (167301) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (167301) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (168151) challenge_2: Mensaje MQTT enviado, id=62246[0m
+[0;32mI (168161) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (168231) challenge_2: Lectura TMP36GZ: ADC=229, Voltage=0.185V, Temp=6.0°C[0m
+[0;32mI (168231) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (168231) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (169241) challenge_2: Mensaje MQTT enviado, id=53338[0m
+[0;32mI (169251) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (169321) challenge_2: Lectura TMP36GZ: ADC=157, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (169321) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (170321) challenge_2: Mensaje MQTT enviado, id=36652[0m
+[0;32mI (170391) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (170401) challenge_2: Lectura TMP36GZ: ADC=229, Voltage=0.185V, Temp=6.0°C[0m
+[0;32mI (170401) challenge_2: Lectura sensor lluvia: ADC=26, min=0, max=208, Humedad=87.5%[0m
+[0;32mI (170411) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 87.5%, Estado: CRITICAL[0m
+[0;32mI (171411) challenge_2: Mensaje MQTT enviado, id=52117[0m
+[0;32mI (171431) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (171491) challenge_2: Lectura TMP36GZ: ADC=156, Voltage=0.126V, Temp=6.0°C[0m
+[0;32mI (171491) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (172491) challenge_2: Mensaje MQTT enviado, id=13391[0m
+[0;32mI (172511) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (172571) challenge_2: Lectura TMP36GZ: ADC=200, Voltage=0.161V, Temp=6.0°C[0m
+[0;32mI (172571) challenge_2: Lectura sensor lluvia: ADC=80, min=0, max=208, Humedad=61.5%[0m
+[0;32mI (172571) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 61.5%, Estado: CRITICAL[0m
+[0;32mI (173581) challenge_2: Mensaje MQTT enviado, id=55461[0m
+[0;32mI (173591) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (173661) challenge_2: Lectura TMP36GZ: ADC=151, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (173661) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (174661) challenge_2: Mensaje MQTT enviado, id=34317[0m
+[0;32mI (174681) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (174741) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (174741) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (175081) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (175081) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (175741) challenge_2: Mensaje MQTT enviado, id=1713[0m
+[0;32mI (175761) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (175831) challenge_2: Lectura TMP36GZ: ADC=136, Voltage=0.110V, Temp=6.0°C[0m
+[0;32mI (175831) challenge_2: Lectura sensor lluvia: ADC=7, min=0, max=208, Humedad=96.6%[0m
+[0;32mI (175831) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 96.6%, Estado: CRITICAL[0m
+[0;32mI (176841) challenge_2: Mensaje MQTT enviado, id=16839[0m
+[0;32mI (176851) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (176921) challenge_2: Lectura TMP36GZ: ADC=231, Voltage=0.186V, Temp=6.0°C[0m
+[0;32mI (176921) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (176921) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (177931) challenge_2: Mensaje MQTT enviado, id=34587[0m
+[0;32mI (178001) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (178021) challenge_2: Lectura TMP36GZ: ADC=173, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (178021) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (178021) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (179031) challenge_2: Mensaje MQTT enviado, id=3563[0m
+[0;32mI (179111) challenge_2: Lectura TMP36GZ: ADC=168, Voltage=0.135V, Temp=6.0°C[0m
+[0;32mI (179111) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (179371) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (180111) challenge_2: Mensaje MQTT enviado, id=16674[0m
+[0;32mI (180121) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (180191) challenge_2: Lectura TMP36GZ: ADC=209, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (180191) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (180191) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (181201) challenge_2: Mensaje MQTT enviado, id=49817[0m
+[0;32mI (181211) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (181281) challenge_2: Lectura TMP36GZ: ADC=136, Voltage=0.110V, Temp=6.0°C[0m
+[0;32mI (181281) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (182281) challenge_2: Mensaje MQTT enviado, id=30017[0m
+[0;32mI (182361) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (182361) challenge_2: Lectura sensor lluvia: ADC=64, min=0, max=208, Humedad=69.2%[0m
+[0;32mI (182361) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 69.2%, Estado: CRITICAL[0m
+[0;32mI (183371) challenge_2: Mensaje MQTT enviado, id=39595[0m
+[0;32mI (183451) challenge_2: Lectura TMP36GZ: ADC=129, Voltage=0.104V, Temp=6.0°C[0m
+[0;32mI (183451) challenge_2: Lectura sensor lluvia: ADC=99, min=0, max=208, Humedad=52.4%[0m
+[0;32mI (183451) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 52.4%, Estado: CRITICAL[0m
+[0;33mW (184091) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (184091) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (184461) challenge_2: Mensaje MQTT enviado, id=34468[0m
+[0;32mI (184541) challenge_2: Lectura TMP36GZ: ADC=161, Voltage=0.130V, Temp=6.0°C[0m
+[0;32mI (184541) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (184541) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (185551) challenge_2: Mensaje MQTT enviado, id=5645[0m
+[0;32mI (185631) challenge_2: Lectura TMP36GZ: ADC=135, Voltage=0.109V, Temp=6.0°C[0m
+[0;32mI (185631) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (186631) challenge_2: Mensaje MQTT enviado, id=34407[0m
+[0;32mI (186711) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (186711) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (186711) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (187721) challenge_2: Mensaje MQTT enviado, id=31535[0m
+[0;32mI (187801) challenge_2: Lectura TMP36GZ: ADC=151, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (187801) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (188801) challenge_2: Mensaje MQTT enviado, id=34623[0m
+[0;32mI (188881) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (188881) challenge_2: Lectura sensor lluvia: ADC=30, min=0, max=208, Humedad=85.6%[0m
+[0;32mI (188881) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 85.6%, Estado: CRITICAL[0m
+[0;32mI (189891) challenge_2: Mensaje MQTT enviado, id=45899[0m
+[0;32mI (189971) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (189971) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;33mW (190851) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (190851) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (190971) challenge_2: Mensaje MQTT enviado, id=48169[0m
+[0;32mI (191051) challenge_2: Lectura TMP36GZ: ADC=165, Voltage=0.133V, Temp=6.0°C[0m
+[0;32mI (191051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (192051) challenge_2: Mensaje MQTT enviado, id=63615[0m
+[0;32mI (192131) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (192131) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (192131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (192691) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192711) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192721) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192721) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192731) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192741) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192741) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192751) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192761) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (192821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (193141) challenge_2: Mensaje MQTT enviado, id=6415[0m
+[0;32mI (193151) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (193221) challenge_2: Lectura TMP36GZ: ADC=137, Voltage=0.110V, Temp=6.0°C[0m
+[0;32mI (193221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (194221) challenge_2: Mensaje MQTT enviado, id=13691[0m
+[0;32mI (194231) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (194301) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (194301) challenge_2: Lectura sensor lluvia: ADC=81, min=0, max=208, Humedad=61.1%[0m
+[0;32mI (194301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 61.1%, Estado: CRITICAL[0m
+[0;32mI (195311) challenge_2: Mensaje MQTT enviado, id=29729[0m
+[0;32mI (195321) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (195391) challenge_2: Lectura TMP36GZ: ADC=145, Voltage=0.117V, Temp=6.0°C[0m
+[0;32mI (195391) challenge_2: Lectura sensor lluvia: ADC=48, min=0, max=208, Humedad=76.9%[0m
+[0;32mI (195391) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 76.9%, Estado: CRITICAL[0m
+[0;32mI (196401) challenge_2: Mensaje MQTT enviado, id=50081[0m
+[0;32mI (196411) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (196481) challenge_2: Lectura TMP36GZ: ADC=227, Voltage=0.183V, Temp=6.0°C[0m
+[0;32mI (196481) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (196481) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (197491) challenge_2: Mensaje MQTT enviado, id=62844[0m
+[0;32mI (197531) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (197551) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (197551) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (197581) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (197581) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (197581) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (198591) challenge_2: Mensaje MQTT enviado, id=35683[0m
+[0;32mI (198611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (198671) challenge_2: Lectura TMP36GZ: ADC=141, Voltage=0.114V, Temp=6.0°C[0m
+[0;32mI (198671) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (199671) challenge_2: Mensaje MQTT enviado, id=22951[0m
+[0;32mI (199691) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (199751) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (199751) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (200751) challenge_2: Mensaje MQTT enviado, id=23134[0m
+[0;32mI (200761) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (200831) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (200831) challenge_2: Lectura sensor lluvia: ADC=106, min=0, max=208, Humedad=49.0%[0m
+[0;32mI (200831) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 49.0%, Estado: CRITICAL[0m
+[0;32mI (201841) challenge_2: Mensaje MQTT enviado, id=3271[0m
+[0;32mI (201851) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (201921) challenge_2: Lectura TMP36GZ: ADC=158, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (201921) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (201921) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (202931) challenge_2: Mensaje MQTT enviado, id=8662[0m
+[0;32mI (202941) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (203011) challenge_2: Lectura TMP36GZ: ADC=224, Voltage=0.181V, Temp=6.0°C[0m
+[0;32mI (203011) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (203011) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (204021) challenge_2: Mensaje MQTT enviado, id=54774[0m
+[0;32mI (204041) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (204101) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (204101) challenge_2: Lectura sensor lluvia: ADC=102, min=0, max=208, Humedad=51.0%[0m
+[0;32mI (204101) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 51.0%, Estado: CRITICAL[0m
+[0;33mW (204571) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (204571) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (205111) challenge_2: Mensaje MQTT enviado, id=36935[0m
+[0;32mI (205121) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (205191) challenge_2: Lectura TMP36GZ: ADC=215, Voltage=0.173V, Temp=6.0°C[0m
+[0;32mI (205191) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (205191) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (206201) challenge_2: Mensaje MQTT enviado, id=59986[0m
+[0;32mI (206221) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (206281) challenge_2: Lectura TMP36GZ: ADC=148, Voltage=0.119V, Temp=6.0°C[0m
+[0;32mI (206281) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (207281) challenge_2: Mensaje MQTT enviado, id=699[0m
+[0;32mI (207291) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (207361) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (207361) challenge_2: Lectura sensor lluvia: ADC=108, min=0, max=208, Humedad=48.1%[0m
+[0;32mI (207361) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 48.1%, Estado: CRITICAL[0m
+[0;32mI (208371) challenge_2: Mensaje MQTT enviado, id=44494[0m
+[0;32mI (208451) challenge_2: Lectura TMP36GZ: ADC=148, Voltage=0.119V, Temp=6.0°C[0m
+[0;32mI (208451) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (208451) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (208661) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (209461) challenge_2: Mensaje MQTT enviado, id=62546[0m
+[0;32mI (209471) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (209541) challenge_2: Lectura TMP36GZ: ADC=219, Voltage=0.176V, Temp=6.0°C[0m
+[0;32mI (209541) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (209541) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (210551) challenge_2: Mensaje MQTT enviado, id=21451[0m
+[0;32mI (210561) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (210631) challenge_2: Lectura TMP36GZ: ADC=147, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (210631) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (211631) challenge_2: Mensaje MQTT enviado, id=49954[0m
+[0;32mI (211641) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (211711) challenge_2: Lectura TMP36GZ: ADC=179, Voltage=0.144V, Temp=6.0°C[0m
+[0;32mI (211711) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (212711) challenge_2: Mensaje MQTT enviado, id=53051[0m
+[0;32mI (212721) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (212731) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (212731) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (212801) challenge_2: Lectura TMP36GZ: ADC=199, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (212801) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (212801) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (213811) challenge_2: Mensaje MQTT enviado, id=45334[0m
+[0;32mI (213821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (213891) challenge_2: Lectura TMP36GZ: ADC=217, Voltage=0.175V, Temp=6.0°C[0m
+[0;32mI (213891) challenge_2: Lectura sensor lluvia: ADC=31, min=0, max=208, Humedad=85.1%[0m
+[0;32mI (213891) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 85.1%, Estado: CRITICAL[0m
+[0;32mI (214901) challenge_2: Mensaje MQTT enviado, id=62308[0m
+[0;32mI (214921) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (214981) challenge_2: Lectura TMP36GZ: ADC=148, Voltage=0.119V, Temp=6.0°C[0m
+[0;32mI (214981) challenge_2: Lectura sensor lluvia: ADC=81, min=0, max=208, Humedad=61.1%[0m
+[0;32mI (214981) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 61.1%, Estado: CRITICAL[0m
+[0;32mI (215991) challenge_2: Mensaje MQTT enviado, id=11992[0m
+[0;32mI (216011) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (216071) challenge_2: Lectura TMP36GZ: ADC=218, Voltage=0.176V, Temp=6.0°C[0m
+[0;32mI (216071) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (216071) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (217081) challenge_2: Mensaje MQTT enviado, id=48577[0m
+[0;32mI (217101) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (217161) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (217161) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (218161) challenge_2: Mensaje MQTT enviado, id=5614[0m
+[0;32mI (218171) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (218241) challenge_2: Lectura TMP36GZ: ADC=190, Voltage=0.153V, Temp=6.0°C[0m
+[0;32mI (218241) challenge_2: Lectura sensor lluvia: ADC=96, min=0, max=208, Humedad=53.8%[0m
+[0;32mI (218241) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 53.8%, Estado: CRITICAL[0m
+[0;32mI (219251) challenge_2: Mensaje MQTT enviado, id=14497[0m
+[0;32mI (219261) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (219331) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (219331) challenge_2: Lectura sensor lluvia: ADC=34, min=0, max=208, Humedad=83.7%[0m
+[0;32mI (219331) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 83.7%, Estado: CRITICAL[0m
+[0;32mI (220341) challenge_2: Mensaje MQTT enviado, id=13778[0m
+[0;32mI (220351) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (220391) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (220391) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (220421) challenge_2: Lectura TMP36GZ: ADC=241, Voltage=0.194V, Temp=6.0°C[0m
+[0;32mI (220431) challenge_2: Lectura sensor lluvia: ADC=48, min=0, max=208, Humedad=76.9%[0m
+[0;32mI (220431) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 76.9%, Estado: CRITICAL[0m
+[0;32mI (221441) challenge_2: Mensaje MQTT enviado, id=62297[0m
+[0;32mI (221451) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (221521) challenge_2: Lectura TMP36GZ: ADC=229, Voltage=0.185V, Temp=6.0°C[0m
+[0;32mI (221521) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (221521) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (222531) challenge_2: Mensaje MQTT enviado, id=2314[0m
+[0;32mI (222571) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (222611) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (222611) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (223611) challenge_2: Mensaje MQTT enviado, id=9004[0m
+[0;32mI (223621) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (223691) challenge_2: Lectura TMP36GZ: ADC=207, Voltage=0.167V, Temp=6.0°C[0m
+[0;32mI (223691) challenge_2: Lectura sensor lluvia: ADC=61, min=0, max=208, Humedad=70.7%[0m
+[0;32mI (223691) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 70.7%, Estado: CRITICAL[0m
+[0;32mI (224701) challenge_2: Mensaje MQTT enviado, id=25432[0m
+[0;32mI (224721) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (224781) challenge_2: Lectura TMP36GZ: ADC=145, Voltage=0.117V, Temp=6.0°C[0m
+[0;32mI (224781) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (225781) challenge_2: Mensaje MQTT enviado, id=35610[0m
+[0;32mI (225791) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (225861) challenge_2: Lectura TMP36GZ: ADC=178, Voltage=0.143V, Temp=6.0°C[0m
+[0;32mI (225861) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (226861) challenge_2: Mensaje MQTT enviado, id=58578[0m
+[0;32mI (226871) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (226881) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (226881) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (226941) challenge_2: Lectura TMP36GZ: ADC=239, Voltage=0.193V, Temp=6.0°C[0m
+[0;32mI (226941) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (226941) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (227951) challenge_2: Mensaje MQTT enviado, id=47196[0m
+[0;32mI (227961) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (228031) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (228031) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (229031) challenge_2: Mensaje MQTT enviado, id=12533[0m
+[0;32mI (229041) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (229111) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (229111) challenge_2: Lectura sensor lluvia: ADC=50, min=0, max=208, Humedad=76.0%[0m
+[0;32mI (229111) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 76.0%, Estado: CRITICAL[0m
+[0;32mI (230121) challenge_2: Mensaje MQTT enviado, id=54308[0m
+[0;32mI (230131) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (230201) challenge_2: Lectura TMP36GZ: ADC=146, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (230201) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (231201) challenge_2: Mensaje MQTT enviado, id=37157[0m
+[0;32mI (231211) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (231281) challenge_2: Lectura TMP36GZ: ADC=182, Voltage=0.147V, Temp=6.0°C[0m
+[0;32mI (231281) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (232281) challenge_2: Mensaje MQTT enviado, id=3671[0m
+[0;32mI (232301) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (232361) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (232361) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (232361) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (233371) challenge_2: Mensaje MQTT enviado, id=62456[0m
+[0;32mI (233451) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (233451) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (233661) challenge_2: MQTT mensaje publicado[0m
+[0;33mW (233661) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (233661) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (234451) challenge_2: Mensaje MQTT enviado, id=32050[0m
+[0;32mI (234511) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (234531) challenge_2: Lectura TMP36GZ: ADC=192, Voltage=0.155V, Temp=6.0°C[0m
+[0;32mI (234531) challenge_2: Lectura sensor lluvia: ADC=5, min=0, max=208, Humedad=97.6%[0m
+[0;32mI (234531) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 97.6%, Estado: CRITICAL[0m
+[0;32mI (235541) challenge_2: Mensaje MQTT enviado, id=43215[0m
+[0;32mI (235551) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (235621) challenge_2: Lectura TMP36GZ: ADC=147, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (235621) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (236621) challenge_2: Mensaje MQTT enviado, id=58507[0m
+[0;32mI (236631) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (236701) challenge_2: Lectura TMP36GZ: ADC=195, Voltage=0.157V, Temp=6.0°C[0m
+[0;32mI (236701) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (237701) challenge_2: Mensaje MQTT enviado, id=10476[0m
+[0;32mI (237721) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (237781) challenge_2: Lectura TMP36GZ: ADC=235, Voltage=0.189V, Temp=6.0°C[0m
+[0;32mI (237781) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (237781) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (238791) challenge_2: Mensaje MQTT enviado, id=30936[0m
+[0;33mW (238801) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (238801) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (238801) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (238871) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (238871) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (239871) challenge_2: Mensaje MQTT enviado, id=5125[0m
+[0;32mI (239891) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (239951) challenge_2: Lectura TMP36GZ: ADC=201, Voltage=0.162V, Temp=6.0°C[0m
+[0;32mI (239951) challenge_2: Lectura sensor lluvia: ADC=83, min=0, max=208, Humedad=60.1%[0m
+[0;32mI (239951) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 60.1%, Estado: CRITICAL[0m
+[0;32mI (240961) challenge_2: Mensaje MQTT enviado, id=17062[0m
+[0;32mI (240991) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (241041) challenge_2: Lectura TMP36GZ: ADC=137, Voltage=0.110V, Temp=6.0°C[0m
+[0;32mI (241041) challenge_2: Lectura sensor lluvia: ADC=81, min=0, max=208, Humedad=61.1%[0m
+[0;32mI (241041) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 61.1%, Estado: CRITICAL[0m
+[0;32mI (242051) challenge_2: Mensaje MQTT enviado, id=22953[0m
+[0;32mI (242061) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (242131) challenge_2: Lectura TMP36GZ: ADC=205, Voltage=0.165V, Temp=6.0°C[0m
+[0;32mI (242131) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (242131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (243141) challenge_2: Mensaje MQTT enviado, id=11219[0m
+[0;32mI (243151) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (243221) challenge_2: Lectura TMP36GZ: ADC=163, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (243221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (244221) challenge_2: Mensaje MQTT enviado, id=36163[0m
+[0;32mI (244241) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (244301) challenge_2: Lectura TMP36GZ: ADC=222, Voltage=0.179V, Temp=6.0°C[0m
+[0;32mI (244301) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=208, Humedad=100.0%[0m
+[0;32mI (244301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (245311) challenge_2: Mensaje MQTT enviado, id=51043[0m
+[0;33mW (245331) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (245331) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (245331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (245391) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (245391) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (246391) challenge_2: Mensaje MQTT enviado, id=29286[0m
+[0;32mI (246401) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (246471) challenge_2: Lectura TMP36GZ: ADC=193, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (246471) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (247471) challenge_2: Mensaje MQTT enviado, id=22444[0m
+[0;32mI (247501) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (247551) challenge_2: Lectura TMP36GZ: ADC=301, Voltage=0.243V, Temp=6.0°C[0m
+[0;32mI (247551) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=330, Humedad=100.0%[0m
+[0;32mI (247551) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (248561) challenge_2: Mensaje MQTT enviado, id=49823[0m
+[0;32mI (248581) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (248641) challenge_2: Lectura TMP36GZ: ADC=155, Voltage=0.125V, Temp=6.0°C[0m
+[0;32mI (248641) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (249641) challenge_2: Mensaje MQTT enviado, id=28222[0m
+[0;32mI (249651) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (249721) challenge_2: Lectura TMP36GZ: ADC=261, Voltage=0.210V, Temp=6.0°C[0m
+[0;32mI (249721) challenge_2: Lectura sensor lluvia: ADC=55, min=0, max=330, Humedad=83.3%[0m
+[0;32mI (249721) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 83.3%, Estado: CRITICAL[0m
+[0;32mI (250731) challenge_2: Mensaje MQTT enviado, id=41794[0m
+[0;32mI (250741) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (250811) challenge_2: Lectura TMP36GZ: ADC=140, Voltage=0.113V, Temp=6.0°C[0m
+[0;32mI (250811) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (251811) challenge_2: Mensaje MQTT enviado, id=563[0m
+[0;32mI (251821) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (251891) challenge_2: Lectura TMP36GZ: ADC=237, Voltage=0.191V, Temp=6.0°C[0m
+[0;32mI (251891) challenge_2: Lectura sensor lluvia: ADC=167, min=0, max=330, Humedad=49.4%[0m
+[0;32mI (251891) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 49.4%, Estado: CRITICAL[0m
+[0;33mW (252291) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (252291) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (252901) challenge_2: Mensaje MQTT enviado, id=16181[0m
+[0;32mI (252911) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (252981) challenge_2: Lectura TMP36GZ: ADC=134, Voltage=0.108V, Temp=6.0°C[0m
+[0;32mI (252981) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (253981) challenge_2: Mensaje MQTT enviado, id=28110[0m
+[0;32mI (254001) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (254061) challenge_2: Lectura TMP36GZ: ADC=176, Voltage=0.142V, Temp=6.0°C[0m
+[0;32mI (254061) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (255061) challenge_2: Mensaje MQTT enviado, id=32226[0m
+[0;32mI (255091) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (255141) challenge_2: Lectura TMP36GZ: ADC=274, Voltage=0.221V, Temp=6.0°C[0m
+[0;32mI (255141) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=330, Humedad=100.0%[0m
+[0;32mI (255141) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (256151) challenge_2: Mensaje MQTT enviado, id=20365[0m
+[0;32mI (256171) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (256231) challenge_2: Lectura TMP36GZ: ADC=158, Voltage=0.127V, Temp=6.0°C[0m
+[0;32mI (256231) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (257231) challenge_2: Mensaje MQTT enviado, id=17950[0m
+[0;32mI (257241) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (257311) challenge_2: Lectura TMP36GZ: ADC=262, Voltage=0.211V, Temp=6.0°C[0m
+[0;32mI (257311) challenge_2: Lectura sensor lluvia: ADC=80, min=0, max=331, Humedad=75.8%[0m
+[0;32mI (257311) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 75.8%, Estado: CRITICAL[0m
+[0;33mW (258021) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (258021) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (258321) challenge_2: Mensaje MQTT enviado, id=31467[0m
+[0;32mI (258401) challenge_2: Lectura TMP36GZ: ADC=129, Voltage=0.104V, Temp=6.0°C[0m
+[0;32mI (258401) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 0.0%, Estado: CRITICAL[0m
+[0;32mI (258841) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (259401) challenge_2: Mensaje MQTT enviado, id=63351[0m
+[0;32mI (259411) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (259481) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (259481) challenge_2: Lectura sensor lluvia: ADC=220, min=0, max=331, Humedad=33.5%[0m
+[0;32mI (259481) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 33.5%, Estado: CRITICAL[0m
+[0;32mI (260491) challenge_2: Mensaje MQTT enviado, id=35465[0m
+[0;32mI (260511) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (260571) challenge_2: Lectura TMP36GZ: ADC=149, Voltage=0.120V, Temp=6.0°C[0m
+[0;32mI (260571) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (260571) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (261581) challenge_2: Mensaje MQTT enviado, id=9227[0m
+[0;32mI (261591) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (261661) challenge_2: Lectura TMP36GZ: ADC=239, Voltage=0.193V, Temp=6.0°C[0m
+[0;32mI (261661) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (261661) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (262671) challenge_2: Mensaje MQTT enviado, id=53311[0m
+[0;32mI (262691) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (262751) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (262751) challenge_2: Lectura sensor lluvia: ADC=177, min=0, max=331, Humedad=46.5%[0m
+[0;32mI (262751) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 46.5%, Estado: CRITICAL[0m
+[0;32mI (263761) challenge_2: Mensaje MQTT enviado, id=65494[0m
+[0;32mI (263771) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (263841) challenge_2: Lectura TMP36GZ: ADC=154, Voltage=0.124V, Temp=6.0°C[0m
+[0;32mI (263841) challenge_2: Lectura sensor lluvia: ADC=69, min=0, max=331, Humedad=79.2%[0m
+[0;32mI (263841) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 79.2%, Estado: CRITICAL[0m
+[0;32mI (264851) challenge_2: Mensaje MQTT enviado, id=29455[0m
+[0;32mI (264861) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (264931) challenge_2: Lectura TMP36GZ: ADC=246, Voltage=0.198V, Temp=6.0°C[0m
+[0;32mI (264931) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (264931) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (265601) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (265601) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (265941) challenge_2: Mensaje MQTT enviado, id=25834[0m
+[0;32mI (265951) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (266021) challenge_2: Lectura TMP36GZ: ADC=173, Voltage=0.139V, Temp=6.0°C[0m
+[0;32mI (266021) challenge_2: Lectura sensor lluvia: ADC=176, min=0, max=331, Humedad=46.8%[0m
+[0;32mI (266021) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 46.8%, Estado: CRITICAL[0m
+[0;32mI (267031) challenge_2: Mensaje MQTT enviado, id=6609[0m
+[0;32mI (267051) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (267111) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (267111) challenge_2: Lectura sensor lluvia: ADC=17, min=0, max=331, Humedad=94.9%[0m
+[0;32mI (267111) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 94.9%, Estado: CRITICAL[0m
+[0;32mI (268121) challenge_2: Mensaje MQTT enviado, id=8202[0m
+[0;32mI (268131) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (268201) challenge_2: Lectura TMP36GZ: ADC=224, Voltage=0.181V, Temp=6.0°C[0m
+[0;32mI (268201) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (268201) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (269211) challenge_2: Mensaje MQTT enviado, id=56517[0m
+[0;32mI (269221) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (269291) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (269291) challenge_2: Lectura sensor lluvia: ADC=209, min=0, max=331, Humedad=36.9%[0m
+[0;32mI (269291) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 36.9%, Estado: CRITICAL[0m
+[0;32mI (270301) challenge_2: Mensaje MQTT enviado, id=4188[0m
+[0;32mI (270341) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (270391) challenge_2: Lectura TMP36GZ: ADC=170, Voltage=0.137V, Temp=6.0°C[0m
+[0;32mI (270391) challenge_2: Lectura sensor lluvia: ADC=208, min=0, max=331, Humedad=37.2%[0m
+[0;32mI (270391) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 37.2%, Estado: CRITICAL[0m
+[0;32mI (271401) challenge_2: Mensaje MQTT enviado, id=12216[0m
+[0;32mI (271411) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (271481) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (271481) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (271481) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (272491) challenge_2: Mensaje MQTT enviado, id=44466[0m
+[0;32mI (272571) challenge_2: Lectura TMP36GZ: ADC=226, Voltage=0.182V, Temp=6.0°C[0m
+[0;32mI (272571) challenge_2: Lectura sensor lluvia: ADC=81, min=0, max=331, Humedad=75.5%[0m
+[0;32mI (272571) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 75.5%, Estado: CRITICAL[0m
+[0;33mW (273581) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (273581) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (273601) challenge_2: Mensaje MQTT enviado, id=62624[0m
+[0;32mI (273681) challenge_2: Lectura TMP36GZ: ADC=160, Voltage=0.129V, Temp=6.0°C[0m
+[0;32mI (273681) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (273681) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (274331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (274341) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (274691) challenge_2: Mensaje MQTT enviado, id=35368[0m
+[0;32mI (274711) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (274771) challenge_2: Lectura TMP36GZ: ADC=221, Voltage=0.178V, Temp=6.0°C[0m
+[0;32mI (274771) challenge_2: Lectura sensor lluvia: ADC=81, min=0, max=331, Humedad=75.5%[0m
+[0;32mI (274771) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 75.5%, Estado: CRITICAL[0m
+[0;32mI (275781) challenge_2: Mensaje MQTT enviado, id=63673[0m
+[0;32mI (275791) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (275861) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (275861) challenge_2: Lectura sensor lluvia: ADC=1, min=0, max=331, Humedad=99.7%[0m
+[0;32mI (275861) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 99.7%, Estado: CRITICAL[0m
+[0;32mI (276871) challenge_2: Mensaje MQTT enviado, id=41586[0m
+[0;32mI (276891) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (276951) challenge_2: Lectura TMP36GZ: ADC=223, Voltage=0.180V, Temp=6.0°C[0m
+[0;32mI (276951) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (276951) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (277901) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (277901) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (277961) challenge_2: Mensaje MQTT enviado, id=26064[0m
+[0;32mI (277971) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (278041) challenge_2: Lectura TMP36GZ: ADC=203, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (278041) challenge_2: Lectura sensor lluvia: ADC=195, min=0, max=331, Humedad=41.1%[0m
+[0;32mI (278041) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 41.1%, Estado: CRITICAL[0m
+[0;32mI (279051) challenge_2: Mensaje MQTT enviado, id=20070[0m
+[0;32mI (279131) challenge_2: Lectura TMP36GZ: ADC=204, Voltage=0.164V, Temp=6.0°C[0m
+[0;32mI (279131) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (279131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (280141) challenge_2: Mensaje MQTT enviado, id=12852[0m
+[0;32mI (280221) challenge_2: Lectura TMP36GZ: ADC=210, Voltage=0.169V, Temp=6.0°C[0m
+[0;32mI (280221) challenge_2: Lectura sensor lluvia: ADC=59, min=0, max=331, Humedad=82.2%[0m
+[0;32mI (280221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 82.2%, Estado: CRITICAL[0m
+[0;32mI (280961) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (281011) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (281231) challenge_2: Mensaje MQTT enviado, id=42911[0m
+[0;32mI (281251) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (281311) challenge_2: Lectura TMP36GZ: ADC=144, Voltage=0.116V, Temp=6.0°C[0m
+[0;32mI (281311) challenge_2: Lectura sensor lluvia: ADC=22, min=0, max=331, Humedad=93.4%[0m
+[0;32mI (281311) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 93.4%, Estado: CRITICAL[0m
+[0;32mI (282321) challenge_2: Mensaje MQTT enviado, id=21898[0m
+[0;32mI (282331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (282401) challenge_2: Lectura TMP36GZ: ADC=225, Voltage=0.181V, Temp=6.0°C[0m
+[0;32mI (282401) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (282401) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (283411) challenge_2: Mensaje MQTT enviado, id=43887[0m
+[0;32mI (283421) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (283491) challenge_2: Lectura TMP36GZ: ADC=146, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (283491) challenge_2: Lectura sensor lluvia: ADC=175, min=0, max=331, Humedad=47.1%[0m
+[0;32mI (283491) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 47.1%, Estado: CRITICAL[0m
+[0;33mW (283581) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (283581) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (284501) challenge_2: Mensaje MQTT enviado, id=14329[0m
+[0;32mI (284521) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (284581) challenge_2: Lectura TMP36GZ: ADC=237, Voltage=0.191V, Temp=6.0°C[0m
+[0;32mI (284581) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (284581) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (285591) challenge_2: Mensaje MQTT enviado, id=28045[0m
+[0;32mI (285601) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (285671) challenge_2: Lectura TMP36GZ: ADC=160, Voltage=0.129V, Temp=6.0°C[0m
+[0;32mI (285671) challenge_2: Lectura sensor lluvia: ADC=192, min=0, max=331, Humedad=42.0%[0m
+[0;32mI (285671) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 42.0%, Estado: CRITICAL[0m
+[0;32mI (286681) challenge_2: Mensaje MQTT enviado, id=49316[0m
+[0;32mI (286701) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (286761) challenge_2: Lectura TMP36GZ: ADC=234, Voltage=0.189V, Temp=6.0°C[0m
+[0;32mI (286761) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (286761) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (287771) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (287771) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (287791) challenge_2: Mensaje MQTT enviado, id=39542[0m
+[0;32mI (287801) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (287871) challenge_2: Lectura TMP36GZ: ADC=164, Voltage=0.132V, Temp=6.0°C[0m
+[0;32mI (287871) challenge_2: Lectura sensor lluvia: ADC=194, min=0, max=331, Humedad=41.4%[0m
+[0;32mI (287871) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 41.4%, Estado: CRITICAL[0m
+[0;32mI (288881) challenge_2: Mensaje MQTT enviado, id=35588[0m
+[0;32mI (288891) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (288961) challenge_2: Lectura TMP36GZ: ADC=215, Voltage=0.173V, Temp=6.0°C[0m
+[0;32mI (288961) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (288961) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (289971) challenge_2: Mensaje MQTT enviado, id=63232[0m
+[0;32mI (289981) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (290051) challenge_2: Lectura TMP36GZ: ADC=194, Voltage=0.156V, Temp=6.0°C[0m
+[0;32mI (290051) challenge_2: Lectura sensor lluvia: ADC=101, min=0, max=331, Humedad=69.5%[0m
+[0;32mI (290051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 69.5%, Estado: CRITICAL[0m
+[0;32mI (291061) challenge_2: Mensaje MQTT enviado, id=39912[0m
+[0;32mI (291071) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (291141) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (291141) challenge_2: Lectura sensor lluvia: ADC=37, min=0, max=331, Humedad=88.8%[0m
+[0;32mI (291141) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 88.8%, Estado: CRITICAL[0m
+[0;32mI (292151) challenge_2: Mensaje MQTT enviado, id=27702[0m
+[0;32mI (292161) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (292231) challenge_2: Lectura TMP36GZ: ADC=234, Voltage=0.189V, Temp=6.0°C[0m
+[0;32mI (292231) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (292231) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (293241) challenge_2: Mensaje MQTT enviado, id=44390[0m
+[0;32mI (293251) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (293321) challenge_2: Lectura TMP36GZ: ADC=141, Voltage=0.114V, Temp=6.0°C[0m
+[0;32mI (293321) challenge_2: Lectura sensor lluvia: ADC=33, min=0, max=331, Humedad=90.0%[0m
+[0;32mI (293321) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 90.0%, Estado: CRITICAL[0m
+[0;33mW (294071) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (294071) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (294331) challenge_2: Mensaje MQTT enviado, id=40012[0m
+[0;32mI (294351) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (294411) challenge_2: Lectura TMP36GZ: ADC=208, Voltage=0.168V, Temp=6.0°C[0m
+[0;32mI (294411) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (294411) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (295421) challenge_2: Mensaje MQTT enviado, id=2379[0m
+[0;32mI (295431) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (295501) challenge_2: Lectura TMP36GZ: ADC=187, Voltage=0.151V, Temp=6.0°C[0m
+[0;32mI (295501) challenge_2: Lectura sensor lluvia: ADC=157, min=0, max=331, Humedad=52.6%[0m
+[0;32mI (295501) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 52.6%, Estado: CRITICAL[0m
+[0;32mI (296511) challenge_2: Mensaje MQTT enviado, id=17708[0m
+[0;32mI (296531) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (296591) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (296591) challenge_2: Lectura sensor lluvia: ADC=18, min=0, max=331, Humedad=94.6%[0m
+[0;32mI (296591) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 94.6%, Estado: CRITICAL[0m
+[0;32mI (297601) challenge_2: Mensaje MQTT enviado, id=36625[0m
+[0;32mI (297611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (297681) challenge_2: Lectura TMP36GZ: ADC=243, Voltage=0.196V, Temp=6.0°C[0m
+[0;32mI (297681) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (297681) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (298691) challenge_2: Mensaje MQTT enviado, id=34749[0m
+[0;32mI (298711) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (298771) challenge_2: Lectura TMP36GZ: ADC=153, Voltage=0.123V, Temp=6.0°C[0m
+[0;32mI (298771) challenge_2: Lectura sensor lluvia: ADC=213, min=0, max=331, Humedad=35.6%[0m
+[0;32mI (298771) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 35.6%, Estado: CRITICAL[0m
+[0;32mI (299781) challenge_2: Mensaje MQTT enviado, id=34711[0m
+[0;32mI (299791) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (299861) challenge_2: Lectura TMP36GZ: ADC=186, Voltage=0.150V, Temp=6.0°C[0m
+[0;32mI (299861) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (299861) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;33mW (300631) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (300631) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (300871) challenge_2: Mensaje MQTT enviado, id=22219[0m
+[0;32mI (300881) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (300951) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (300951) challenge_2: Lectura sensor lluvia: ADC=41, min=0, max=331, Humedad=87.6%[0m
+[0;32mI (300951) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 87.6%, Estado: CRITICAL[0m
+[0;32mI (301961) challenge_2: Mensaje MQTT enviado, id=11506[0m
+[0;32mI (301991) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (302051) challenge_2: Lectura TMP36GZ: ADC=162, Voltage=0.131V, Temp=6.0°C[0m
+[0;32mI (302051) challenge_2: Lectura sensor lluvia: ADC=11, min=0, max=331, Humedad=96.7%[0m
+[0;32mI (302051) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 96.7%, Estado: CRITICAL[0m
+[0;32mI (303061) challenge_2: Mensaje MQTT enviado, id=14036[0m
+[0;32mI (303081) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (303141) challenge_2: Lectura TMP36GZ: ADC=140, Voltage=0.113V, Temp=6.0°C[0m
+[0;32mI (303141) challenge_2: Lectura sensor lluvia: ADC=184, min=0, max=331, Humedad=44.4%[0m
+[0;32mI (303141) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 44.4%, Estado: CRITICAL[0m
+[0;32mI (304151) challenge_2: Mensaje MQTT enviado, id=53887[0m
+[0;32mI (304161) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (304231) challenge_2: Lectura TMP36GZ: ADC=198, Voltage=0.160V, Temp=6.0°C[0m
+[0;32mI (304231) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (304231) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (305241) challenge_2: Mensaje MQTT enviado, id=64800[0m
+[0;32mI (305251) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (305321) challenge_2: Lectura TMP36GZ: ADC=196, Voltage=0.158V, Temp=6.0°C[0m
+[0;32mI (305321) challenge_2: Lectura sensor lluvia: ADC=205, min=0, max=331, Humedad=38.1%[0m
+[0;32mI (305331) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 38.1%, Estado: CRITICAL[0m
+[0;32mI (306331) challenge_2: Mensaje MQTT enviado, id=48417[0m
+[0;32mI (306351) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (306411) challenge_2: Lectura TMP36GZ: ADC=150, Voltage=0.121V, Temp=6.0°C[0m
+[0;32mI (306411) challenge_2: Lectura sensor lluvia: ADC=96, min=0, max=331, Humedad=71.0%[0m
+[0;32mI (306411) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 71.0%, Estado: CRITICAL[0m
+[0;33mW (306581) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (306581) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (307421) challenge_2: Mensaje MQTT enviado, id=23651[0m
+[0;32mI (307441) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (307501) challenge_2: Lectura TMP36GZ: ADC=244, Voltage=0.197V, Temp=6.0°C[0m
+[0;32mI (307501) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (307501) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (308511) challenge_2: Mensaje MQTT enviado, id=53087[0m
+[0;32mI (308521) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (308591) challenge_2: Lectura TMP36GZ: ADC=181, Voltage=0.146V, Temp=6.0°C[0m
+[0;32mI (308591) challenge_2: Lectura sensor lluvia: ADC=176, min=0, max=331, Humedad=46.8%[0m
+[0;32mI (308591) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 46.8%, Estado: CRITICAL[0m
+[0;32mI (309601) challenge_2: Mensaje MQTT enviado, id=28704[0m
+[0;32mI (309611) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (309681) challenge_2: Lectura TMP36GZ: ADC=169, Voltage=0.136V, Temp=6.0°C[0m
+[0;32mI (309681) challenge_2: Lectura sensor lluvia: ADC=7, min=0, max=331, Humedad=97.9%[0m
+[0;32mI (309681) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 97.9%, Estado: CRITICAL[0m
+[0;32mI (310691) challenge_2: Mensaje MQTT enviado, id=13611[0m
+[0;32mI (310711) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (310771) challenge_2: Lectura TMP36GZ: ADC=248, Voltage=0.200V, Temp=6.0°C[0m
+[0;32mI (310771) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (310771) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (311781) challenge_2: Mensaje MQTT enviado, id=1120[0m
+[0;32mI (311801) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (311861) challenge_2: Lectura TMP36GZ: ADC=159, Voltage=0.128V, Temp=6.0°C[0m
+[0;32mI (311861) challenge_2: Lectura sensor lluvia: ADC=208, min=0, max=331, Humedad=37.2%[0m
+[0;32mI (311861) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 37.2%, Estado: CRITICAL[0m
+[0;33mW (312291) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (312291) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (312871) challenge_2: Mensaje MQTT enviado, id=27100[0m
+[0;32mI (312881) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (312951) challenge_2: Lectura TMP36GZ: ADC=189, Voltage=0.152V, Temp=6.0°C[0m
+[0;32mI (312951) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (312951) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (313961) challenge_2: Mensaje MQTT enviado, id=7955[0m
+[0;32mI (313971) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (314041) challenge_2: Lectura TMP36GZ: ADC=233, Voltage=0.188V, Temp=6.0°C[0m
+[0;32mI (314041) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (314041) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (315051) challenge_2: Mensaje MQTT enviado, id=44992[0m
+[0;32mI (315061) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (315131) challenge_2: Lectura TMP36GZ: ADC=136, Voltage=0.110V, Temp=6.0°C[0m
+[0;32mI (315131) challenge_2: Lectura sensor lluvia: ADC=195, min=0, max=331, Humedad=41.1%[0m
+[0;32mI (315131) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 41.1%, Estado: CRITICAL[0m
+[0;32mI (316141) challenge_2: Mensaje MQTT enviado, id=19817[0m
+[0;32mI (316151) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (316221) challenge_2: Lectura TMP36GZ: ADC=215, Voltage=0.173V, Temp=6.0°C[0m
+[0;32mI (316221) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (316221) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (317231) challenge_2: Mensaje MQTT enviado, id=60207[0m
+[0;32mI (317241) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (317311) challenge_2: Lectura TMP36GZ: ADC=211, Voltage=0.170V, Temp=6.0°C[0m
+[0;32mI (317311) challenge_2: Lectura sensor lluvia: ADC=64, min=0, max=331, Humedad=80.7%[0m
+[0;32mI (317311) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 80.7%, Estado: CRITICAL[0m
+[0;32mI (318321) challenge_2: Mensaje MQTT enviado, id=61316[0m
+[0;32mI (318331) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (318401) challenge_2: Lectura TMP36GZ: ADC=148, Voltage=0.119V, Temp=6.0°C[0m
+[0;32mI (318401) challenge_2: Lectura sensor lluvia: ADC=163, min=0, max=331, Humedad=50.8%[0m
+[0;32mI (318401) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 50.8%, Estado: CRITICAL[0m
+[0;33mW (318581) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (318581) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (319411) challenge_2: Mensaje MQTT enviado, id=41343[0m
+[0;32mI (319421) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (319491) challenge_2: Lectura TMP36GZ: ADC=242, Voltage=0.195V, Temp=6.0°C[0m
+[0;32mI (319491) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (319491) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (320501) challenge_2: Mensaje MQTT enviado, id=26087[0m
+[0;32mI (320511) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (320581) challenge_2: Lectura TMP36GZ: ADC=164, Voltage=0.132V, Temp=6.0°C[0m
+[0;32mI (320581) challenge_2: Lectura sensor lluvia: ADC=190, min=0, max=331, Humedad=42.6%[0m
+[0;32mI (320581) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 42.6%, Estado: CRITICAL[0m
+[0;32mI (321591) challenge_2: Mensaje MQTT enviado, id=38343[0m
+[0;32mI (321601) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (321671) challenge_2: Lectura TMP36GZ: ADC=176, Voltage=0.142V, Temp=6.0°C[0m
+[0;32mI (321671) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (321671) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (322681) challenge_2: Mensaje MQTT enviado, id=25877[0m
+[0;32mI (322701) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (322761) challenge_2: Lectura TMP36GZ: ADC=255, Voltage=0.205V, Temp=6.0°C[0m
+[0;32mI (322761) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (322761) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (323771) challenge_2: Mensaje MQTT enviado, id=21608[0m
+[0;32mI (323781) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (323851) challenge_2: Lectura TMP36GZ: ADC=135, Voltage=0.109V, Temp=6.0°C[0m
+[0;32mI (323851) challenge_2: Lectura sensor lluvia: ADC=223, min=0, max=331, Humedad=32.6%[0m
+[0;32mI (323851) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 32.6%, Estado: CRITICAL[0m
+[0;32mI (324861) challenge_2: Mensaje MQTT enviado, id=16938[0m
+[0;32mI (324871) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (324941) challenge_2: Lectura TMP36GZ: ADC=232, Voltage=0.187V, Temp=6.0°C[0m
+[0;32mI (324941) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (324941) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (325951) challenge_2: Mensaje MQTT enviado, id=61746[0m
+[0;32mI (325961) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (326031) challenge_2: Lectura TMP36GZ: ADC=202, Voltage=0.163V, Temp=6.0°C[0m
+[0;32mI (326031) challenge_2: Lectura sensor lluvia: ADC=147, min=0, max=331, Humedad=55.6%[0m
+[0;32mI (326031) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 55.6%, Estado: CRITICAL[0m
+[0;33mW (326831) httpd_parse: parse_block: parsing failed[0m
+[0;33mW (326841) httpd_txrx: httpd_resp_send_err: 400 Bad Request - Bad request syntax[0m
+[0;32mI (327041) challenge_2: Mensaje MQTT enviado, id=53997[0m
+[0;32mI (327101) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (327121) challenge_2: Lectura TMP36GZ: ADC=152, Voltage=0.122V, Temp=6.0°C[0m
+[0;32mI (327121) challenge_2: Lectura sensor lluvia: ADC=69, min=0, max=331, Humedad=79.2%[0m
+[0;32mI (327121) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 79.2%, Estado: CRITICAL[0m
+[0;32mI (328131) challenge_2: Mensaje MQTT enviado, id=25282[0m
+[0;32mI (328141) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (328211) challenge_2: Lectura TMP36GZ: ADC=212, Voltage=0.171V, Temp=6.0°C[0m
+[0;32mI (328211) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (328211) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
+[0;32mI (329221) challenge_2: Mensaje MQTT enviado, id=56831[0m
+[0;32mI (329231) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (329301) challenge_2: Lectura TMP36GZ: ADC=146, Voltage=0.118V, Temp=6.0°C[0m
+[0;32mI (329301) challenge_2: Lectura sensor lluvia: ADC=225, min=0, max=331, Humedad=32.0%[0m
+[0;32mI (329301) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 32.0%, Estado: CRITICAL[0m
+[0;32mI (330311) challenge_2: Mensaje MQTT enviado, id=46313[0m
+[0;32mI (330321) challenge_2: MQTT mensaje publicado[0m
+[0;32mI (330391) challenge_2: Lectura TMP36GZ: ADC=211, Voltage=0.170V, Temp=6.0°C[0m
+[0;32mI (330391) challenge_2: Lectura sensor lluvia: ADC=0, min=0, max=331, Humedad=100.0%[0m
+[0;32mI (330391) challenge_2: Distancia: 2.0 cm, Temp: 6.0 °C, Humedad: 100.0%, Estado: CRITICAL[0m
